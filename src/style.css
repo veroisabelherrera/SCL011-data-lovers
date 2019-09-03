@@ -1,0 +1,46 @@
+body{
+    background-image: url(Imagenes_DataLovers/pokemon-fondo1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #66999;
+    margin: 0;
+}
+
+.logo, .menu{
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    width: 200px;
+}
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.link-menu{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-menu:hover{
+    color: yellow;
+}
+
+
+.boxtext{
+    margin: 20px;
+    padding: 40px;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: justify;
+}
