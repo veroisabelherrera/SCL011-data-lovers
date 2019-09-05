@@ -1,4 +1,8 @@
-// /* Manejo del DOM */
+<<<<
+
+
+
+
 
 const container = document.getElementById("root")
   const selectCandy  = document.getElementById("candy_count");
@@ -25,3 +29,4 @@ const container = document.getElementById("root")
                             </div>`
     
     })})
+
