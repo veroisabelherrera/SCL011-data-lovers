@@ -8,90 +8,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="root">
+
+    <!--Header Nav-->
+        <header>
+            <nav>
+                <img class="logo" alt="logo de pokemon" id="imagen-logo" src="/Users/veronica/Documents/Laboratoria/03_BootCamp/03_DataLovers_Local/GitHub_DataLovers/SCL011-data-lovers/Imgs_DataLovers/pokemon-logo.png"/>
+                <ul class="mainmenu">
+                    <li><a href="#" id="button-menu1">Actualidad</a></li>
+                    <li><a href="#" id="button-menu2">Listado Pokémones</a></li>
+                    <li><a href="#" id="button-menu3">Estadisticas</a></li>
+                </ul>
+            </nav>
+
+
     <!--Pantalla Home-->
-    <header>
-           <!--  <img class="logo" alt="logo de pokemon" id="imagen-logo" src="Imagenes_DataLovers/pokemon-logo.png"/>  -->
-        <nav class="menu"> 
-            <a href="#" class="link-menu">Info</a>
-            <a href="#" class="link-menu">Listado de Pokémones</a>
-            <a href="#" class="link-menu">Estadisticas</a>
-        </nav>
-
-    
-    <!--Pantalla Info-->    
-    <div id="info-screen">
-    <p class="boxtext">Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG, pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión, juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en el mercado mundial.
-        Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían alcanzado una cantidad de 312 millones de ejemplares (incluyendo la venta de la versión Pikachu de la consola Nintendo 64),1​ logrando ocupar el segundo lugar de las sagas de videojuegos más vendidos de Nintendo.
-        La franquicia celebró su décimo aniversario el 27 de febrero de 2006.
-
-        <br>
-        La saga de videojuegos es desarrollada por la compañía programadora de software japonesa Game Freak, con personajes creados por Satoshi Tajiri para la empresa de juguetes Creatures Inc., y a su vez distribuida por Nintendo.
-        La misión en estos juegos es capturar y entrenar a los pokémon (criaturas cuya denominación da nombre al juego), que hasta la fecha alcanzan el número de 809.
-        La posibilidad de intercambiarlos le hizo conseguir una popularidad que se plasmó en un éxito de ventas y la consiguiente aparición de una serie animada, películas y diverso merchandising como peluches, juguetes y cartas.
-            
-        <br>
-        La producción de los videojuegos, serie de anime y demás material para su distribución en occidente fue realizada en Estados Unidos por 4Kids Entertainment hasta noviembre de 2005, momento en que decidió no renovar su contrato con Pokémon USA (una subsidiaria de Pokémon Company).
-        Actualmente esta supervisa todo lo referente al material de Pokémon en su distribución en occidente</p>
-    
+    <div id="home" class="homescreen">
+               <section>
+                        <article class="intro-text">
+                            <h2 class="title2">Bienvenidos a la Pokémania</h2>
+                                <h4 class="title4">Aquí podrás conocer mas de cerca los 151 Pokémones de la Región de Kanto...
+                                Los datos más relevantes como sus tipos de elementos, huevos o la cantidad de Candys
+                                necesarios para hacerlos evolucionar.</h4>
+                                <h4 class="title4">También podrás mantenerte actualizado con las noticias y actualizaciones más
+                                recientes que envuelven a tus Pokémones favoritos</h4>
+                                <h4 class="title4">Por último, podrás conocer algunos datos y cálculos extras que te ayudarán a conocer mejor
+                                tus mejores aliados Pokémones.</h4>
+                        </article>
+               </section>
     </div>
 
 
-    <!--Pantalla Listado-->    
-        <h2>Conoce más de cerca todos los Pokemones de la Región de Kanto</h2>
-        <p>Ordenar por:</p>
-            <select class="select" id="orden-pokedex">Ordenar
-                <option value="Ascendente">Ordenar por</option>
-                <option value="Ascendente">Orden Ascendente Pokedex</option>
-                <option value="Descendente">Orden Descendente Pokedex</option>
-            </select>
+    <!--Pantalla Info-->
+        <div id="news-screen" class="homescreen">
+            <dl class="box-article">
+                <dt class="title5">Moviplaya</dt>
+                <button class="readmorebutton">Leer más</button>
+            </dl>
+            <dl class="box-article">
+                <dt class="title5">Campañas en IFEMA de Pokémon</dt>
+                <button class="readmorebutton">Leer más</button>
+            </dl>
+            <dl class="box-article">
+                <dt class="title5">VGC's</dt>
+                <button class="readmorebutton">Leer más</button>
+            </dl>
+        </div>
 
-            <select class="select" id="tipo-pokémon">Tipo
-                <option value="Selected">Tipo Pokémon</option>
-                <option value="Water">Agua</option>
-                <option value="Bug">Bicho</option>
-                <option value="Dragon">Dragón</option>
-                <option value="Electric">Eléctrico</option>
-                <option value="Ghost">Fantasma</option>
-                <option value="Fire">Fuego</option>
-                <option value="Ice">Hielo</option>
-                <option value="Grass">Hierba</option>
-                <option value="Fighting">Luchador</option>
-                <option value="Normal">Normal</option>
-                <option value="Psychic">Psíquico</option>
-                <option value="Rock">Roca</option>
-                <option value="Ground">Tierra</option>
-                <option value="Poison">Veneno</option>
-                <option value="Flying">Volador</option>
-            </select>
 
-            <select class="select" id="tipo-huevo">
+    <!--Pantalla Listado-->
+    <div id="listado-screen">
+        <h3 class="title2">Conoce más de cerca todos los Pokemones de la Región de Kanto</h3>
+            <div class="select-list">
+                <p>Ordenar por:</p>
+                <select class="select" id="orden-pokedex">Ordenar
+                    <option value="Ascendente">Ordenar por</option>
+                    <option value="Ascendente">Orden Ascendente Pokedex</option>
+                    <option value="Descendente">Orden Descendente Pokedex</option>
+                </select>
+
+                <p>Mostrar por:</p>
+                <select class="select" id="tipo-pokémon">Tipo
+                    <option value="">Tipo</option>
+                    <option value="Water">Agua</option>
+                    <option value="Bug">Bicho</option>
+                    <option value="Dragon">Dragón</option>
+                    <option value="Electric">Eléctrico</option>
+                    <option value="Ghost">Fantasma</option>
+                    <option value="Fire">Fuego</option>
+                    <option value="Ice">Hielo</option>
+                    <option value="Grass">Hierba</option>
+                    <option value="Fighting">Luchador</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Psychic">Psíquico</option>
+                    <option value="Rock">Roca</option>
+                    <option value="Ground">Tierra</option>
+                    <option value="Poison">Veneno</option>
+                    <option value="Flying">Volador</option>
+                </select>
+
+                <select class="select" id="tipo-huevo">
+                    <option value="">Huevo</option>
                     <option value="2 km">Huevos de 2 km</option>
                     <option value="5 km">Huevos de 5 km</option>
                     <option value="10 km">Huevos de 10 km</option>
                     <option value="Not in Eggs">Sin huevo</option>
                 </select>
 
-            <select class="select" id="candy_count">
-                    <option value="">25 Caramelos</option>
+                <select class="select" id="candy_count">
+                    <option value="">Candy</option>
                     <option value="50">50 Caramelos</option>
                     <option value="100">100 Caramelos</option>
                     <option value="25">25 Caramelos</option>
-                </select>    
+                </select>
+            </div>
+    </div>
 
-<div id="root"></div>
+
     <!--Pantalla Estadisticas-->
+    <div id="estadisticas-screen">
+            <h3 class="title2">Conoce algunos datos promedios de tus pokemones favoritos</h3>
+    </div>
 
 
 
 
 
-               
         <script src="./data/pokemon/pokemon.js"></script>
         <script src="data.js"></script>
         <script src="main.js"></script>
-        
+
     </header>
-    
+
     <section>
 
     </section>
@@ -101,4 +129,3 @@
     </footer>
 </body>
 </html>
-
