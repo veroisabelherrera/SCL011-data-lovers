@@ -1,8 +1,11 @@
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
+
+
     background-color: white;
     margin: 0;
 }
@@ -137,6 +140,8 @@ p{
     width: 140px;
 }
 
-#listado-screen, #news-screen, #estadisticas-screen{
+
+#listSelect, #news-screen, #estadisticas-screen{
     display: none;
 }
+

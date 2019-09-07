@@ -23,6 +23,7 @@
 
 
     <!--Pantalla Home-->
+
     <div id="home" class="homescreen">
                <section>
                         <article class="intro-text">
@@ -57,7 +58,7 @@
 
 
     <!--Pantalla Listado-->
-    <div id="listado-screen">
+    <div id="listSelect">
         <h3 class="title2">Conoce más de cerca todos los Pokemones de la Región de Kanto</h3>
             <div class="select-list">
                 <p>Ordenar por:</p>
@@ -68,7 +69,7 @@
                 </select>
 
                 <p>Mostrar por:</p>
-                <select class="select" id="tipo-pokémon">Tipo
+                <select class="select" id="type_Pokemon">Tipo
                     <option value="">Tipo</option>
                     <option value="Water">Agua</option>
                     <option value="Bug">Bicho</option>
@@ -87,22 +88,27 @@
                     <option value="Flying">Volador</option>
                 </select>
 
-                <select class="select" id="tipo-huevo">
-                    <option value="">Huevo</option>
+                
+            <select class="select" id="type_egg">
+                     <option value="">Huevos</option>
                     <option value="2 km">Huevos de 2 km</option>
                     <option value="5 km">Huevos de 5 km</option>
                     <option value="10 km">Huevos de 10 km</option>
                     <option value="Not in Eggs">Sin huevo</option>
                 </select>
 
-                <select class="select" id="candy_count">
+            <select class="select" id="candy_count">
                     <option value="">Candy</option>
+                    <option value="12">12 Caramelos</option>
+                    <option value="25">25 Caramelos</option>
                     <option value="50">50 Caramelos</option>
                     <option value="100">100 Caramelos</option>
-                    <option value="25">25 Caramelos</option>
-                </select>
+                    <option value="400">400 Caramelos</option>
+                    
+                </select>    
             </div>
-    </div>
+          </div>
+<div id="root"></div>
 
 
     <!--Pantalla Estadisticas-->
@@ -110,9 +116,7 @@
             <h3 class="title2">Conoce algunos datos promedios de tus pokemones favoritos</h3>
     </div>
 
-
-
-
+    
 
         <script src="./data/pokemon/pokemon.js"></script>
         <script src="data.js"></script>
