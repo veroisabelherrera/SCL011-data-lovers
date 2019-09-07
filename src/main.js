@@ -1,40 +1,41 @@
 
 
 const selects1 = document.getElementById("listSelect");
-const containerFilters = document.getElementById("listOfPokemos") 
+const containerFilters = document.getElementById("button-menu2") 
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
 });
+
 //Nav Menu Principal
-document.getElementById("button-menu1").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="block";
-  document.getElementById("home").style.display="none"
-  document.getElementById("listado-screen").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="none";
-});
+// document.getElementById("button-menu1").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="block";
+//   document.getElementById("home").style.display="none"
+//   document.getElementById("listado-screen").style.display="none";
+//   document.getElementById("estadisticas-screen").style.display="none";
+// });
 
-document.getElementById("button-menu2").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="none"
-  document.getElementById("listado-screen").style.display="block";
-  document.getElementById("estadisticas-screen").style.display="none";
-});
+// document.getElementById("button-menu2").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="none";
+//   document.getElementById("home").style.display="none"
+//   document.getElementById("listado-screen").style.display="block";
+//   document.getElementById("estadisticas-screen").style.display="none";
+// });
 
-document.getElementById("button-menu3").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="none"
-  document.getElementById("listado-screen").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="block";
-});
+// document.getElementById("button-menu3").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="none";
+//   document.getElementById("home").style.display="none"
+//   document.getElementById("listado-screen").style.display="none";
+//   document.getElementById("estadisticas-screen").style.display="block";
+// });
 
-document.getElementById("imagen-logo").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="block"
-  document.getElementById("listado-screen").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="none";
-});
+// document.getElementById("imagen-logo").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="none";
+//   document.getElementById("home").style.display="block"
+//   document.getElementById("listado-screen").style.display="none";
+//   document.getElementById("estadisticas-screen").style.display="none";
+// });
 
-const container = document.getElementById("root")
+const container = document.getElementById("root1")
   const selectCandy  = document.getElementById("candy_count");
   selectCandy.addEventListener("change", () =>{
   let valueCandy = document.getElementById("candy_count").value
@@ -45,19 +46,20 @@ const container = document.getElementById("root")
  
 
 //                  // imprimir resultados
-document.getElementById("root").innerHTML="";
+document.getElementById("root1").innerHTML="";
 prindCandy.forEach(element => {
-  container.innerHTML += `<div> 
+  container.innerHTML += `<div>
 
                                 <div class="cartPk">
+                                <div class="cartPk1">
+                                <img src = ${element.img} class="imgPk">
 
-                                <img src = ${element.img}>
-
-                                <p>Pokemon ${element.name}</p>
-                                <p>Pokedex ${element.id}</p>
+                                <p> ${element.name}</p>
+                                <p> # ${element.id}</p>
                                </div>
                                 </div>
-                            </div>`
+                                </div>`
+                            
 
     })})
 
@@ -71,18 +73,19 @@ prindCandy.forEach(element => {
    
 
   //                  // imprimir resultados egss
-  document.getElementById("root").innerHTML="";
+  document.getElementById("root1").innerHTML="";
   prindEgg.forEach(element => {
-    container.innerHTML += `<div> 
+    container.innerHTML += `<div>
                                   <div class="cartPk">
-                                  
-                                  <img src = ${element.img}> 
+                                  <div class="cartPk1">
+                                  <img src = ${element.img} class="imgPk"> 
                            
-                                  <p>Pokemon ${element.name}</p>
-                                  <p>Pokedex ${element.id}</p>
+                                  <p> ${element.name}</p>
+                                  <p> # ${element.id}</p>
                                  </div> 
                                   </div>    
-                              </div>`
+                                  </div> 
+                              `
       
       })})
 
@@ -93,19 +96,20 @@ prindCandy.forEach(element => {
    let printPokemon = window.filterData.thirdFilterType(data, valueTypePokemon)
    
   //                  // imprimir resultados Type
-  document.getElementById("root").innerHTML="";
+  document.getElementById("root1").innerHTML="";
 
    printPokemon.forEach(element => {
-    container.innerHTML += `<div> 
+    container.innerHTML += `<div>
                                   <div class="cartPk">
-                                  
-                                  <img src = ${element.img}> 
+                                  <div class="cartPk1">
+                                  <img src = ${element.img} class="imgPk"> 
                            
-                                  <p>Pokemon ${element.name}</p>
-                                  <p>Pokedex ${element.id}</p>
+                                  <p> ${element.name}</p>
+                                  <p> # ${element.id}</p>
                                  </div> 
-                                  </div>    
-                              </div>`
+                                  </div>   
+                                  </div>  
+                              `
       
       })})
 
