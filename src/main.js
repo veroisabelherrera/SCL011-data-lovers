@@ -1,15 +1,45 @@
 
-const selects1 = document.getElementById("prueba");
+
+const selects1 = document.getElementById("listSelect");
 const containerFilters = document.getElementById("listOfPokemos") 
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
+});
+//Nav Menu Principal
+document.getElementById("button-menu1").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="block";
+  document.getElementById("home").style.display="none"
+  document.getElementById("listado-screen").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="none";
+});
+
+document.getElementById("button-menu2").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="none"
+  document.getElementById("listado-screen").style.display="block";
+  document.getElementById("estadisticas-screen").style.display="none";
+});
+
+document.getElementById("button-menu3").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="none"
+  document.getElementById("listado-screen").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="block";
+});
+
+document.getElementById("imagen-logo").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="block"
+  document.getElementById("listado-screen").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="none";
 });
 
 const container = document.getElementById("root")
   const selectCandy  = document.getElementById("candy_count");
   selectCandy.addEventListener("change", () =>{
-  let valueCandy = document.getElementById("candy_count").value    
+  let valueCandy = document.getElementById("candy_count").value
 //let valueCandy = selectCandy.options[selectCandy.selectedIndex].value
+
  let prindCandy = window.filterData.firstFilterCandy(data, valueCandy)
  
  
@@ -18,17 +48,19 @@ const container = document.getElementById("root")
 document.getElementById("root").innerHTML="";
 prindCandy.forEach(element => {
   container.innerHTML += `<div> 
+
                                 <div class="cartPk">
-                                
-                                <img src = ${element.img}> 
-                         
+
+                                <img src = ${element.img}>
+
                                 <p>Pokemon ${element.name}</p>
                                 <p>Pokedex ${element.id}</p>
-                               </div> 
-                                </div>    
+                               </div>
+                                </div>
                             </div>`
-    
+
     })})
+
 
     
     const selectEgg  = document.getElementById("type_egg");
@@ -78,3 +110,4 @@ prindCandy.forEach(element => {
       })})
 
       
+
