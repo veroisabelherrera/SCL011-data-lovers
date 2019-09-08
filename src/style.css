@@ -18,10 +18,13 @@ body{
 .logo{
     height: 60px;
     margin-top: 20px;
+
 }
 .logo:hover{
     cursor: pointer;
 }
+
+
 
 nav{
     color:inherit;
@@ -29,7 +32,7 @@ nav{
     text-align: center;
 }
 nav a{
-    text-decoration: none;
+    
     color: blue;
 }
 nav li{
@@ -150,8 +153,44 @@ p{
     display: none;
 }
 
+
 header{
     display: block;
+}
+
+
+
+
+#root1{
+    display: flex;
+    
+    flex-flow: wrap;
+    width: 100%;
+}
+.cartPk{
+    display: flex;
+    
+    flex-wrap:wrap;
+    
+    flex-direction: row;
+    margin: 40px;
+    width: 220px;
+    height: 300px;
+    
+    
+}
+    
+.cartPk1{
+   display: flex;
+  flex-direction: column;
+  align-items:center ;
+  padding: 50px;
+    
+}
+
+.imgPk{
+    width: 160px;
+    height: 160px;
 }
 
 
