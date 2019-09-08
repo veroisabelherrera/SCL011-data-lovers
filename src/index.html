@@ -11,7 +11,7 @@
 <div id="root">
 
     <!--Header Nav-->
-        <header>
+        <header id="headermenu">
             <nav>
                 <img class="logo" alt="logo de pokemon" id="imagen-logo" src="/Users/veronica/Documents/Laboratoria/03_BootCamp/03_DataLovers_Local/GitHub_DataLovers/SCL011-data-lovers/Imgs_DataLovers/pokemon-logo.png"/>
                 <ul class="mainmenu">
@@ -20,6 +20,8 @@
                     <li><a href="#" id="button-menu3">Estadisticas</a></li>
                 </ul>
             </nav>
+        </header>
+
 
 
     <!--Pantalla Home-->
@@ -60,12 +62,14 @@
     <!--Pantalla Listado-->
     <div id="listSelect">
         <h3 class="title2">Conoce más de cerca todos los Pokemones de la Región de Kanto</h3>
-            <div class="select-list">
+            <div id="selectMenu" class="select-list">
                 <p>Ordenar por:</p>
                 <select class="select" id="orden-pokedex">Ordenar
-                    <option value="Ascendente">Ordenar por</option>
+                    <option value="">Ordenar por</option>
                     <option value="Ascendente">Orden Ascendente Pokedex</option>
                     <option value="Descendente">Orden Descendente Pokedex</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
                 </select>
 
                 <p>Mostrar por:</p>
@@ -89,15 +93,15 @@
                 </select>
 
                 
-            <select class="select" id="type_egg">
-                     <option value="">Huevos</option>
+                <select class="select" id="type_egg">
+                    <option value="">Huevos</option>
                     <option value="2 km">Huevos de 2 km</option>
                     <option value="5 km">Huevos de 5 km</option>
                     <option value="10 km">Huevos de 10 km</option>
                     <option value="Not in Eggs">Sin huevo</option>
                 </select>
 
-            <select class="select" id="candy_count">
+                <select class="select" id="candy_count">
                     <option value="">Candy</option>
                     <option value="12">12 Caramelos</option>
                     <option value="25">25 Caramelos</option>
@@ -106,9 +110,11 @@
                     <option value="400">400 Caramelos</option>
                     
                 </select>    
+            
+                <div id="showPokemones" class="cardsPokemones">
+                </div>    
             </div>
-          </div>
-<div id="root"></div>
+    </div>
 
 
     <!--Pantalla Estadisticas-->
@@ -122,14 +128,14 @@
         <script src="data.js"></script>
         <script src="main.js"></script>
 
-    </header>
 
-    <section>
+        <section>
 
-    </section>
+        </section>
 
-    <footer>
+        <footer>
 
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

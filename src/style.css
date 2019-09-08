@@ -19,6 +19,9 @@ body{
     height: 60px;
     margin-top: 20px;
 }
+.logo:hover{
+    cursor: pointer;
+}
 
 nav{
     color:inherit;
@@ -121,7 +124,6 @@ p{
 }
 
 .select-list{
-    background-color: #FFCD02;
     color: #525252;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
@@ -132,16 +134,24 @@ p{
 
 .select{
     display: inline-block;
-    background: transparent;
-    border: none;
+    background-color: transparent;
+    border: solid;
+    border-width: 2px;
+    border-color: #525252;
     font-size: 14px;
     height: 30px;
     padding: 5px;
     width: 140px;
+    letter-spacing: 0.5px;
 }
 
 
 #listSelect, #news-screen, #estadisticas-screen{
     display: none;
 }
+
+header{
+    display: block;
+}
+
 
