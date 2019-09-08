@@ -1,41 +1,43 @@
 
-
+//Nav Menu Principal
+document.getElementById("button-menu1").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="block";
+  document.getElementById("home").style.display="none";
+  document.getElementById("listSelect").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="none";
+  });
+  
+  document.getElementById("button-menu2").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="none";
+  document.getElementById("listSelect").style.display="block";
+  document.getElementById("estadisticas-screen").style.display="none";
+  });
+  
+  document.getElementById("button-menu3").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="none";
+  document.getElementById("listSelect").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="block";
+  });
+  
+  document.getElementById("imagen-logo").addEventListener("click", () =>{
+  document.getElementById("news-screen").style.display="none";
+  document.getElementById("home").style.display="block";
+  document.getElementById("listado-screen").style.display="none";
+  document.getElementById("estadisticas-screen").style.display="none";
+  });
+  
+  
 const selects1 = document.getElementById("listSelect");
 const containerFilters = document.getElementById("button-menu2") 
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
 });
 
-//Nav Menu Principal
-// document.getElementById("button-menu1").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="block";
-//   document.getElementById("home").style.display="none"
-//   document.getElementById("listado-screen").style.display="none";
-//   document.getElementById("estadisticas-screen").style.display="none";
-// });
+ //Funciones de filtrado
 
-// document.getElementById("button-menu2").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="none";
-//   document.getElementById("home").style.display="none"
-//   document.getElementById("listado-screen").style.display="block";
-//   document.getElementById("estadisticas-screen").style.display="none";
-// });
-
-// document.getElementById("button-menu3").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="none";
-//   document.getElementById("home").style.display="none"
-//   document.getElementById("listado-screen").style.display="none";
-//   document.getElementById("estadisticas-screen").style.display="block";
-// });
-
-// document.getElementById("imagen-logo").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="none";
-//   document.getElementById("home").style.display="block"
-//   document.getElementById("listado-screen").style.display="none";
-//   document.getElementById("estadisticas-screen").style.display="none";
-// });
-
-const container = document.getElementById("root1")
+const container = document.getElementById("showPokemones")
   const selectCandy  = document.getElementById("candy_count");
   selectCandy.addEventListener("change", () =>{
   let valueCandy = document.getElementById("candy_count").value
@@ -46,7 +48,7 @@ const container = document.getElementById("root1")
  
 
 //                  // imprimir resultados
-document.getElementById("root1").innerHTML="";
+document.getElementById("showPokemones").innerHTML="";
 prindCandy.forEach(element => {
   container.innerHTML += `<div>
 
@@ -73,7 +75,7 @@ prindCandy.forEach(element => {
    
 
   //                  // imprimir resultados egss
-  document.getElementById("root1").innerHTML="";
+  document.getElementById("showPokemones").innerHTML="";
   prindEgg.forEach(element => {
     container.innerHTML += `<div>
                                   <div class="cartPk">
@@ -96,7 +98,7 @@ prindCandy.forEach(element => {
    let printPokemon = window.filterData.thirdFilterType(data, valueTypePokemon)
    
   //                  // imprimir resultados Type
-  document.getElementById("root1").innerHTML="";
+  document.getElementById("showPokemones").innerHTML="";
 
    printPokemon.forEach(element => {
     container.innerHTML += `<div>
@@ -114,4 +116,5 @@ prindCandy.forEach(element => {
       })})
 
       
+
 
