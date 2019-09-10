@@ -17,7 +17,7 @@ body{
 }
 
 
-.logopk{
+/*.logopk{
 
 
     height: 60px;
@@ -28,7 +28,7 @@ body{
 
 .logo:hover{
     cursor: pointer;
-}
+}*/
 
 nav, header{
     font-size:14px;

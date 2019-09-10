@@ -21,12 +21,12 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   });
 
 
-document.getElementById("imagen-logo").addEventListener("click", () =>{
+/*document.getElementById("imagen-logo").addEventListener("click", () =>{
 document.getElementById("news-screen").style.display="none";
 document.getElementById("home").style.display="block";
 document.getElementById("listado-screen").style.display="none";
 document.getElementById("estadisticas-screen").style.display="none";
-});
+});*/
 
 
 
