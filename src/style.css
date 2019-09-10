@@ -16,13 +16,16 @@ body{
     background-position: center right;
 }
 
+
 .logopk{
+
+
     height: 60px;
     margin-top: 20px;
     display: flex;
     align-content: center;
 
-}
+
 .logo:hover{
     cursor: pointer;
 }
@@ -98,6 +101,11 @@ h4{
     color: #525252;
 }
 
+.title2
+{
+    font-size: 18px; 
+    margin: 40px  
+}
 .title5{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -172,12 +180,14 @@ header{
 }
 
 
+
 #showPokemones{
     display: flex; 
     flex-flow: wrap;
     width: 100%;
     margin: 0px;
     justify-content: center;
+
 }
 
 .cartPk{
@@ -193,7 +203,7 @@ header{
     justify-content: center;
 }
 
-.cartPk1{
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -640,4 +650,3 @@ header{
         margin-bottom: 5px;
     }
 }
-
