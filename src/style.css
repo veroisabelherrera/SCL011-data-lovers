@@ -1,39 +1,44 @@
-
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-
-
     background-color: white;
     margin: 0;
 }
 
+
+/*Responsive para computadoras*/
+
 .homescreen{
-    background-image: url(https://i.ibb.co/zFVHZbS/fondohome-04.jpg);
+    background-image: url(https://i.ibb.co/xjNcXLj/fondohome.jpg);
     background-size: cover;
+    background-position: center right;
 }
 
-/*.logo{
+
+.logopk{
+
+
     height: 60px;
     margin-top: 20px;
+    display: flex;
+    align-content: center;
 
-}*/
+
 .logo:hover{
     cursor: pointer;
 }
 
-
-
-nav{
-    color:inherit;
+nav, header{
     font-size:14px;
     text-align: center;
+    background-color: white;
+
 }
-nav a{
-    
+nav a{ 
     color: blue;
+    text-decoration: none;
 }
 nav li{
     display: inline-block;
@@ -43,8 +48,7 @@ nav li{
     border: none;
     color: blue;
     margin: 10px 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 nav li:hover{
@@ -67,11 +71,19 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 28px;
     font-weight: bold;
+    padding-top: 20px;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-size: 24px; 
+    margin: 40px;
+    text-align: center;
 }
 h4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-weight: 400;
+    margin-top: 60px;
 }
 
 .intro-text{
@@ -83,7 +95,7 @@ h4{
 
 .box-article, .title5, .news{
     background-color: none;
-    padding: 20px 40px 20px 40px;
+    padding: 60px 60px 60px 20px;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #525252;
@@ -96,8 +108,10 @@ h4{
 }
 .title5{
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
     color: blue;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .readmorebutton{
@@ -142,7 +156,7 @@ p{
 
 .select{
     display: inline-block;
-    background-color: yellow;
+    background-color: rgba(255, 204, 2, 0.9);
     border: solid;
     border-radius: 10px;
     border-width: 2px;
@@ -167,64 +181,472 @@ header{
 
 
 
-
 #showPokemones{
-    display: flex;
-    
+    display: flex; 
     flex-flow: wrap;
     width: 100%;
     margin: 0px;
+    justify-content: center;
+
 }
+
 .cartPk{
     display: flex;
-    flex-wrap:wrap;
- 
-    margin: 30px ;
+    flex-wrap: wrap;
+    margin: 30px;
     width: 220px;
     height: 300px;
-    
-    
+    border: solid;
+    border-color: #525252;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
 }
-    
-.cartPk1{
- display: flex;
-  flex-direction: column;
-  align-items:center ;
-  padding: 70px;
-  
-  
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0%, 0%, 100%, .4);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 5px;
 }
 
 .imgPk{
+    height: 50%;
+    background-color: none;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#pokeName, #pokedex{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    align-content: center;
     width: 170px;
-    height: 150px;
-}
-.logopk{
-    display: flex;
-    align-items:center;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/*Responsive*/
 
-@media (max-width:500px){
 
- nav li{
+
+
+/*Responsive para telefonos grandes y tablets*/
+
+@media screen and (min-width:500px) and (max-width:1024px){
+
+    .homescreen{
+        background-image: url(https://i.ibb.co/xjNcXLj/fondohome.jpg);
+        background-size: cover;
+        background-position: center right;
+    }
     
-    margin: 20px 15px;
+    .logopk{
+        height: 50px;
+        margin-top: 10px;
+        display: inline-flex;
+        justify-content: center;
     
+    }
+    .logo:hover{
+        cursor: pointer;
+    }
+    nav, header{
+        background-color: #FFCD02;
+        align-content: center;
+        padding: 5px;
+    }
+
+    ul li{
+        display: inline;
+        padding: 5px 10px;
+        background-color: none;
+        border: none;
+        color: blue;
+        margin: 5px 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        text-align: center;
+    }
+    ul li:hover{
+        background-color:rgba(0%, 0%, 100%, .3);
+        color:#fff;
+    }
+    ul li:active{
+        background-color: rgba(0%, 0%, 100%, .4);
+        color:blue;
+        border-left-style: solid;
+        border-left: 5px solid;
+        border-right: 5px solid;
+        border-top: none;
+        border-bottom: none;
+        border-color: blue;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+        font-size: 18px; 
+        margin: 40px;
+        text-align: center;
+    }
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+        color: black;
+    }
+    
+    .intro-text{
+        background-color: #ffffff6e;
+        margin: 20px 40px;
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .box-article, .title5{
+        background-color: none;
+        padding: 40px 10px 40px 20px;
+    }
+    .title5{
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color: blue;
+        padding-top: 20px;
+    }
+    
+    .readmorebutton{
+        background-color:#ffffffb4;
+        padding: 5px 15px;
+        border: solid;
+        border-width: 3px;
+        border-color: rgba(0%, 0%, 100%, .6);
+        border-radius: 10px;
+        margin: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        color: rgba(0%, 0%, 100%, .5);
+        float: right;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    
+    .readmorebutton:hover{
+        background-color: #fff;
+        color:blue;
+        border: solid;
+        border-width: 4px;
+        border-color: blue;
+        border-radius: 10px;
+    }
+    
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .select-list{
+        color: #525252;
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .select{
+        display: inline-flex;
+        background-color: rgba(255, 204, 2, 0.9);
+        border: solid;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: #525252;
+        font-size: 11px;
+        height: 28px;
+        padding: 2px;
+        width: 110px;
+        letter-spacing: 0.3px;
+        margin: 5px;
+        align-content: center;
+    }
+    
+    
+    #listSelect, #news-screen, #estadisticas-screen{
+        display: none;
+    }
+    
+    
+    header{
+        display: block;
+    }
+    
+    
+    #showPokemones{
+        display: flex; 
+        flex-flow: wrap;
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
+    
+    .cartPk{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        width: 165px;
+        height: 225px;
+        border: solid;
+        border-color: #525252;
+        border-radius: 6px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cartPk1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0%, 0%, 100%, .4);
+        padding: 5px;
+    }
+    
+    .imgPk{
+        height: 50%;
+        background-color: none;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #pokeName, #pokedex{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        align-content: center;
+        width: 135px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
 }
 
-nav li:hover{
-    margin: 20px , 20px
-}
-nav li:active{
 
-    border-left: 30px ;
-    border-right: 25px ;
-}
-.title2{
- font-size: 18px; 
- margin: 20px  
-}
+
+
+
+/*Responsive para telefonos*/
+
+@media screen and (max-width:500px){
+
+    .homescreen{
+        background-image: url(https://i.ibb.co/xjNcXLj/fondohome.jpg);
+        background-size: cover;
+        background-position: center right;
+    }
+    
+    .logopk{
+        height: 40px;
+        margin-top: 10px;
+        display: inline-flex;
+    
+    }
+    .logo:hover{
+        cursor: pointer;
+    }
+    nav, header{
+        background-color: #FFCD02;
+        align-content: center;
+    }
+
+    ul li{
+        display: inline;
+        padding: 5px 10px;
+        background-color: none;
+        border: none;
+        color: blue;
+        margin: 5px 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    ul li:hover{
+        background-color:rgba(0%, 0%, 100%, .3);
+        color:#fff;
+    }
+    ul li:active{
+        background-color: rgba(0%, 0%, 100%, .4);
+        color:blue;
+        border-left-style: solid;
+        border-left: 5px solid;
+        border-right: 5px solid;
+        border-top: none;
+        border-bottom: none;
+        border-color: blue;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+        font-size: 21px; 
+        margin: 40px;
+        text-align: center;
+    }
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+        color: black;
+        margin-block: 10px;
+    }
+    
+    .intro-text{
+        background-color: #ffffff6e;
+        margin: 20px 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .box-article, .title5{
+        background-color: none;
+        padding: 5px 10px 10px 15px;
+    }
+    .title5{
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: blue;
+        margin-top: 20px;
+    }
+    
+    .readmorebutton{
+        background-color:#ffffffb4;
+        padding: 5px 15px;
+        border: solid;
+        border-width: 3px;
+        border-color: rgba(0%, 0%, 100%, .6);
+        border-radius: 10px;
+        margin: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        color: rgba(0%, 0%, 100%, .5);
+        float: right;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    
+    .readmorebutton:hover{
+        background-color: #fff;
+        color:blue;
+        border: solid;
+        border-width: 4px;
+        border-color: blue;
+        border-radius: 10px;
+    }
+    
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .select-list{
+        color: #525252;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .select{
+        display: flex;
+        background-color: #FFCD02;
+        border: solid;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: #525252;
+        font-size: 11px;
+        height: 28px;
+        padding: 2px;
+        width: 100px;
+        letter-spacing: 0.3px;
+        margin: 5px;
+        align-content: center;
+    }
+    
+    
+    #listSelect, #news-screen, #estadisticas-screen{
+        display: none;
+    }
+    
+    
+    header{
+        display: block;
+    }
+    
+    
+    #showPokemones{
+        display: flex; 
+        flex-flow: wrap;
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
+    
+    .cartPk{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 110px;
+        height: 150px;
+        border: solid;
+        border-color: #525252;
+        border-radius: 6px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cartPk1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0%, 0%, 100%, .4);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .imgPk{
+        height: 50%;
+        background-color: none;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #pokeName, #pokedex{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        align-content: center;
+        width: 85px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }

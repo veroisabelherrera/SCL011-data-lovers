@@ -1,5 +1,6 @@
 
 
+
   //para filtrar por candy
   
   window.filterData={
@@ -11,23 +12,28 @@
     
     return dataFilterCandy
     },
+
 //para filtrar por eggs
-    secondFilterEggs:(data, valueEgg) => {
-      const dataFilterEgg = data.filter(element => {
-      return element.egg == (valueEgg) 
-    
+   secondFilterEggs:(data, valueEgg) => {
+     const dataFilterEgg = data.filter(element => {
+     return element.egg == (valueEgg) 
+   
+      })
+   
+     return dataFilterEgg
+     },
+     //para filtrar por Type
+     thirdFilterType:(data,valueTypePokemon) =>{
+       const dataFilterPokemonType= data.filter(element =>{
+         return element.type.includes(valueTypePokemon) 
        })
+
+       return dataFilterPokemonType;
+     }
+ }
+
     
-      return dataFilterEgg
-      },
-      //para filtrar por Type
-      thirdFilterType:(data,valueTypePokemon) =>{
-        const dataFilterPokemonType= data.filter(element =>{
-          return element.type.includes(valueTypePokemon) 
-        })
-        return dataFilterPokemonType;
-      }
-  }
+      
    //const data = POKEMON.pokemon
  //if sortOrder=a-z valor que tomare desde el select colocar como
   //sorby =name , id valor que no se de donde tomar 
@@ -80,3 +86,4 @@ return ordenarPokemon
 
 
   
+
