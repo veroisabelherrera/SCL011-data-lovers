@@ -1,16 +1,135 @@
 global.window = global;
 global.assert = require('chai').assert;
-require('../src/data');
-require('./data.spec.js');
+require('../src/data/pokemon/pokemon.js');
+require('../src/data.js');
+require('./data.spec.js');  
 
 
-describe('example', () => {
+// describe('example', () => {
   
-  it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
+//   it('debería ser una función', () => {
+//     assert.equal(typeof example, 'function');
+//   });
+
+//   it('debería retornar "example"', () => {
+//     assert.equal(example(), 'example');
+//   });
+// })
+
+
+describe('filterData.firstFilterCandy', ()=>{
+  const sample = [
+    {
+    "name": "Bulbasaur",
+    "candy_count": 25
+    },
+    {
+    "name": "Pidgeotto",
+    "candy_count": 50
+  },
+  {
+    "name": "Magikarp",
+    "candy_count": 400,
+  },
+
+  ]
+describe('filterData.firstFilterCandy', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.filterData.firstFilterCandy, 'function');
   });
 
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
+
+  it('debería retornar objeto"Bulbasaur" para filtro "25 candy_count" ', () => {
+  assert.deepEqual(window.filterData.firstFilterCandy(sample ,'25' ),[{"name": "Bulbasaur","candy_count": 25}]);
   });
+  
 })
+ })
+
+describe('filterData.secondFilterEggs', ()=>{
+  const sample = [
+    {
+    "name": "Ekans",
+    "egg": "5 km"
+    },
+    {
+    "name": "Squirtle",
+    "egg": "2 km"
+  },
+  {
+    "name": "Onix",
+    "egg": "10 km"
+  },
+
+
+describe('filterData.secondFilterEggs', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.filterData.secondFilterEggs, 'function');
+  });
+
+
+  it('debería retornar objeto "Squirtle" para filtro "2 km" ', () => {
+  assert.deepEqual(window.filterData.secondFilterEggs(sample ,'2 km' ),[{"name": "Squirtle","egg": "2 km"}]);
+  });
+  
+})
+] })
+
+describe('filterData.thirdFilterType', ()=>{
+  const sample = [
+    {
+    "name": "Ekans",
+    "type": [ "Poison"]
+    },
+    {
+      "name": "Squirtle",
+      "type":  ["Water"]
+  },
+  
+
+  ]
+describe('filterData.thirdFilterType', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.filterData.thirdFilterType, 'function');
+  });
+
+
+  it('debería retornar objeto"Squirtle" para filtro Water" ', () => {
+  assert.deepEqual(window.filterData.thirdFilterType(sample ,'Water' ),[{"name": "Squirtle","type": ["Water"]}]);
+  });
+  
+})
+ })
+
+//  describe('filterData.thirdFilterType', ()=>{
+//   const sample = [
+//     {
+//     "name": "Squirtle",
+//     "type": [ "Poison"]
+//     },
+//     {
+//      "name": "Squirtle",
+//      "type":  ["Water"]
+//   },
+//{
+  //     "name": "Squirtle",
+  //      "type":  ["Water"]
+  //   },
+
+//   ]
+// describe('filterData.thirdFilterType', () => {
+  
+//   it('debería ser una función', () => { 
+//     assert.equal(typeof window.filterData.thirdFilterType, 'function');
+//   });
+
+
+//   it('debería retornar objeto "Squirtle""Squirtle""Venusaur, para ordenado pokedex 1-151 ', () => {
+//   assert.deepEqual(window.filterData.thirdFilterType(sample ,'Water' ),[{"name": "Squirtle","type": ["Water"]}]);
+//   });
+  
+// })
+//  })

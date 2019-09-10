@@ -15,11 +15,11 @@ body{
     background-size: cover;
 }
 
-.logo{
+/*.logo{
     height: 60px;
     margin-top: 20px;
 
-}
+}*/
 .logo:hover{
     cursor: pointer;
 }
@@ -89,6 +89,11 @@ h4{
     color: #525252;
 }
 
+.title2
+{
+    font-size: 18px; 
+    margin: 40px  
+}
 .title5{
     font-weight: bold;
     color: blue;
@@ -137,15 +142,17 @@ p{
 
 .select{
     display: inline-block;
-    background-color: transparent;
+    background-color: yellow;
     border: solid;
+    border-radius: 10px;
     border-width: 2px;
-    border-color: #525252;
+    border-color: black;
     font-size: 14px;
     height: 30px;
     padding: 5px;
     width: 140px;
     letter-spacing: 0.5px;
+    margin: 10px;
 }
 
 
@@ -161,19 +168,18 @@ header{
 
 
 
-#root1{
+#showPokemones{
     display: flex;
     
     flex-flow: wrap;
     width: 100%;
+    margin: 0px;
 }
 .cartPk{
     display: flex;
-    
     flex-wrap:wrap;
-    
-    flex-direction: row;
-    margin: 40px;
+ 
+    margin: 30px ;
     width: 220px;
     height: 300px;
     
@@ -181,16 +187,44 @@ header{
 }
     
 .cartPk1{
-   display: flex;
+ display: flex;
   flex-direction: column;
   align-items:center ;
-  padding: 50px;
-    
+  padding: 70px;
+  
+  
 }
 
 .imgPk{
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 150px;
+}
+.logopk{
+    display: flex;
+    align-items:center;
+
 }
 
+/*Responsive*/
 
+@media (max-width:500px){
+
+ nav li{
+    
+    margin: 20px 15px;
+    
+}
+
+nav li:hover{
+    margin: 20px , 20px
+}
+nav li:active{
+
+    border-left: 30px ;
+    border-right: 25px ;
+}
+.title2{
+ font-size: 18px; 
+ margin: 20px  
+}
+}

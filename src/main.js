@@ -21,12 +21,12 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   document.getElementById("estadisticas-screen").style.display="block";
   });
   
-  document.getElementById("imagen-logo").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="block";
-  document.getElementById("listado-screen").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="none";
-  });
+  // document.getElementById("imagen-logo").addEventListener("click", () =>{
+  // document.getElementById("news-screen").style.display="none";
+  // document.getElementById("home").style.display="block";
+  // document.getElementById("listado-screen").style.display="none";
+  // document.getElementById("estadisticas-screen").style.display="none";
+  // });
   
   
 const selects1 = document.getElementById("listSelect");
@@ -36,6 +36,8 @@ containerFilters.addEventListener("click", ()=>{
 });
 
  //Funciones de filtrado
+const data =window.POKEMON.pokemon;
+
 
 const container = document.getElementById("showPokemones")
   const selectCandy  = document.getElementById("candy_count");
@@ -44,7 +46,7 @@ const container = document.getElementById("showPokemones")
 //let valueCandy = selectCandy.options[selectCandy.selectedIndex].value
 
  let prindCandy = window.filterData.firstFilterCandy(data, valueCandy)
- 
+  
  
 
 //                  // imprimir resultados
@@ -115,6 +117,25 @@ prindCandy.forEach(element => {
       
       })})
 
-      
+   //let sorby = sorby 
+      const orderPk  = document.getElementById("orden-pokedex");
+      orderPk.addEventListener("change", () =>{
+      let sortOrder= document.getElementById("orden-pokedex").value   
+     let printOrder = window.order.sortData(data,  sortOrder)
+     document.getElementById("showPokemones").innerHTML="";
 
+     printOrder.forEach(element => {
+      container.innerHTML += `<div>
+                                    <div class="cartPk">
+                                    <div class="cartPk1">
+                                    <img src = ${element.img} class="imgPk"> 
+                             
+                                    <p> ${element.name}</p>
+                                    <p> # ${element.id}</p>
+                                   </div> 
+                                    </div>   
+                                    </div>  
+                                `
+        
+        })})
 
