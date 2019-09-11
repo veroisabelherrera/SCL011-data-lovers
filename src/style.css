@@ -16,6 +16,7 @@ body{
     background-position: center right;
 }
 
+
 .logopk{
     height: 60px;
     margin-top: 20px;
@@ -25,7 +26,7 @@ body{
 
 .logopk:hover{
     cursor: pointer;
-}
+}*/
 
 nav, header{
     display: inline-block;
@@ -79,7 +80,10 @@ h2{
 
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     font-size: 28px; 
+
+
     margin: 40px;
     text-align: center;
 }
@@ -282,6 +286,7 @@ header{
     }
 
     h3{
+
         font-size: 24px; 
     }
 
@@ -373,7 +378,11 @@ header{
     }
 
     h3{
+
         font-size: 20px; 
+
+        
+
         text-align: center;
     }
 
@@ -432,4 +441,9 @@ header{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+}
+
+
+.icono i{
+    font-size: 120%
 }

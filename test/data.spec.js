@@ -104,32 +104,34 @@ describe('filterData.thirdFilterType', () => {
 })
  })
 
-//  describe('filterData.thirdFilterType', ()=>{
-//   const sample = [
-//     {
-//     "name": "Squirtle",
-//     "type": [ "Poison"]
-//     },
-//     {
-//      "name": "Squirtle",
-//      "type":  ["Water"]
-//   },
-//{
-  //     "name": "Squirtle",
-  //      "type":  ["Water"]
-  //   },
+ describe('order.sortData', ()=>{
+  const sample = [
+    {
+    
+    "id": 1
+    },
+    {
+     
+     "id": 2,
+  },
+{
+     
+       "id": 3,
+    },
 
-//   ]
-// describe('filterData.thirdFilterType', () => {
+  ]
+describe('order.sortData', () => {
   
-//   it('debería ser una función', () => { 
-//     assert.equal(typeof window.filterData.thirdFilterType, 'function');
-//   });
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.order.sortData, 'function');
+  });
 
-
-//   it('debería retornar objeto "Squirtle""Squirtle""Venusaur, para ordenado pokedex 1-151 ', () => {
-//   assert.deepEqual(window.filterData.thirdFilterType(sample ,'Water' ),[{"name": "Squirtle","type": ["Water"]}]);
-//   });
+  it('debería retornar objeto "1 ,2 , 3", para ordenado pokedex 1-151 ', () => {
+    assert.deepEqual(window.order.sortData(sample ,'1-151' ),[{"id": 1},{"id": 2},{"id": 3}]);
+    });
+  it('debería retornar objeto "3 ,2 , 1", para ordenado pokedex 151-1 ', () => {
+  assert.deepEqual(window.order.sortData(sample ,'151-1' ),[{"id": 3},{"id": 2},{"id": 1}]);
+  });
   
-// })
-//  })
+})
+ })

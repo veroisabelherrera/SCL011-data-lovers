@@ -4,6 +4,7 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   document.getElementById("home").style.display="none";
   document.getElementById("listSelect").style.display="none";
   document.getElementById("estadisticas-screen").style.display="none";
+  
   });
 
   document.getElementById("button-menu2").addEventListener("click", () =>{
@@ -21,12 +22,12 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   });
 
 
-document.getElementById("imagen-logo").addEventListener("click", () =>{
-document.getElementById("news-screen").style.display="none";
-document.getElementById("home").style.display="block";
-document.getElementById("listado-screen").style.display="none";
-document.getElementById("estadisticas-screen").style.display="none";
-});
+// document.getElementById("imagen-logo").addEventListener("click", () =>{
+// document.getElementById("news-screen").style.display="none";
+// document.getElementById("home").style.display="block";
+// document.getElementById("listado-screen").style.display="none";
+// document.getElementById("estadisticas-screen").style.display="none";
+// });
 
 
   
@@ -119,11 +120,11 @@ container.innerHTML += `<div>
         })})
 
 
-   //let sorby = sorby 
+      
       const orderPk  = document.getElementById("orden-pokedex");
       orderPk.addEventListener("change", () =>{
       let sortOrder= document.getElementById("orden-pokedex").value   
-     let printOrder = window.order.sortData(data,  sortOrder)
+     let printOrder = window.order.sortData(data, sortOrder)
      document.getElementById("showPokemones").innerHTML="";
 
      printOrder.forEach(element => {
