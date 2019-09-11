@@ -36,11 +36,11 @@ Para comenzar planificación de página web se crea un [trello]() el cual contie
 
 Luego realiza flujo en papel primer flujo en papel 
 
-![imagen]https://i.ibb.co/nw1CgFv/flujo-de-caja-numero-1.png)
+![imagen1](https://i.ibb.co/nw1CgFv/flujo-de-caja-numero-1.png)
 
 Se realiza feedback con squad, se realizan las mejoras correspondientes quedando como segundo flujo:
 
-![imagen](https://i.ibb.co/5FJfzmD/Flujo-data-numero-dos.png)
+![imagen2](https://i.ibb.co/5FJfzmD/Flujo-data-numero-dos.png)
 
 Nuevamente se realiza feedback donde se obtiene como resultado:
 
@@ -55,7 +55,7 @@ Nuevamente se realiza feedback donde se obtiene como resultado:
 
 Con el flujo listo se comienza a realizar prototipo de baja fidelidad en papel 
 
-![imagen]( (https://i.ibb.co/Qv8XCr7/prototipo-en-papel.png)
+![imagen3](https://i.ibb.co/Qv8XCr7/prototipo-en-papel.png)
 
 Se realiza la misma actividad  menciona anteriormente (feedback) con compañeras y coach, se realiza realizan las mejoras para hacer la página más entendible
 

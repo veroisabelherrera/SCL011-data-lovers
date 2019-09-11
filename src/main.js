@@ -62,9 +62,7 @@ container.innerHTML += `<div>
 
   });
   
-
   
-      
       const selectEgg  = document.getElementById("type_egg");
       selectEgg.addEventListener("change", () =>{
       let valueEgg = document.getElementById("type_egg").value    
