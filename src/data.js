@@ -102,23 +102,22 @@ return ordenarPokemon
  
  
    //funciona para calculos
+
+   window.calcuData = {
+    computeStats:(data,alturaPoke)=> {
+      let tipoPorcen = [];
+        for (let i = 0; i < data.length; i++){
+          for (let x = 0; x < data[i].height.length; x++){
+            if (data[i].height[x] === alturaPoke){
+              tipoPorcen.push(data[i].height[x]);
+              }
+            }
+          }
+        return ('El promedio para este tipo de pokémon es de: ' + ((tipoPorcen.length) / (151)).toFixed(2).bold() + 'm');
+      }
+    };
  
- window.calcuData={
-   computeStats:(data, alturaPoke) => {
-     let tipoPorcen = [];
-     for (let i = 0; i < data.length; i++) {
-       for (let x = 0; x < data[i].height.length; x++) {
-         if (data[i].height[x] === alturaPoke) {
-           tipoPorcen.push(data[i].height[x]);
-         }
-       }
-     }
-     return ('El porcentaje del pokemon de tipo  es: ' + ((tipoPorcen.length) / (alturaPoke)).toFixed(2).bold() + '%');
-   }
- };
- 
- 
- 
+
  
  /*
  var suma = 0;
@@ -162,6 +161,7 @@ return ordenarPokemon
 //   return 0
 //   } )
 //   console.log(ordenarPk);
+
 
 
 
