@@ -48,11 +48,13 @@
   
   if(sortOrder == "1-151" ){
     return (pk1.id < pk2.id) ? -1 : 1
- }
-else if (sortOrder == "151-1" ){
+ } 
+else  {
   return (pk1.id > pk2.id) ? -1 : 1
 }
 })
+//console.log(sortby);
+
 return ordenarPokemon
 }}; 
   //console.log(ordenarPokemon);
@@ -84,6 +86,4 @@ return ordenarPokemon
 //   console.log(ordenarPk);
 
 
-
-  
 
