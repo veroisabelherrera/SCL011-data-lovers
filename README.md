@@ -13,10 +13,12 @@ Dentro de la una aplicación con exceso  información  los usuarios no tienen ac
 Por lo que basado en esto requerimientos se crea el sitio “POKEMANÍA” el lugar donde  los usuarios que ya tengan alguna referencia o relación con la aplicación pueden encontrar de forma sencilla y rápida datos que serán de utilidad para el jugador, además podrán encontrar información extra para complementar su experiencia tales como noticias relevantes, actualizaciones y datos interesantes que ayudaran al jugador a expandir su relación con la aplicación.
 
 ## **Público objetivo**
+
 Nuestro usuario son adultos jóvenes de entre 20 a 30 años que usan la plataforma de juego varios de a la semana es decir que son  jugadores  bastantes activos,  de nivel intermedio.
 Estos conocen o tienen alguna referencia de los Pokémons, puesto que conocen la serie de televisión y además jugaban sus versiones anteriores de gameboy advance, lo que los hace jugadores bastante interiorizados en el tema.
 
 ## **Entrevistas**
+
 Para conocer los requerimientos del usuario se planifica y elabora una entrevista, la cual contenía preguntas abiertas y cerradas.
 Esta se realizan a 5 jugadores de la aplicación, en lo cual se puedo concluir que la información  que les interesa es:
  -Los pokemon que pueden salir en los huevo de  2 km ,5km, 10km puesto que     quieren  conocer  si caminar dicha distancia les traerá un pokemon que les interese o ayude.
@@ -34,11 +36,11 @@ Para comenzar planificación de página web se crea un [trello]() el cual contie
 
 Luego realiza flujo en papel primer flujo en papel 
 
-![imagen]( https://i.ibb.co/nw1CgFv/flujo-de-caja-numero-1.png)
+![imagen]https://i.ibb.co/nw1CgFv/flujo-de-caja-numero-1.png)
 
 Se realiza feedback con squad, se realizan las mejoras correspondientes quedando como segundo flujo:
 
-![imagen]( (https://i.ibb.co/5FJfzmD/Flujo-data-numero-dos.png)
+![imagen](https://i.ibb.co/5FJfzmD/Flujo-data-numero-dos.png)
 
 Nuevamente se realiza feedback donde se obtiene como resultado:
 

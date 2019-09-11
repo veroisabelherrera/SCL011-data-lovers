@@ -427,5 +427,12 @@ header{
 
 
 .icono i{
+
     font-size: 120%;
+}
+
+
+footer{
+    display: flex;
+    align-self: end;
 }
