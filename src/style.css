@@ -26,7 +26,7 @@ body{
 
 .logopk:hover{
     cursor: pointer;
-}*/
+}
 
 nav, header{
     display: inline-block;
@@ -446,4 +446,9 @@ header{
 
 .icono i{
     font-size: 120%
+}
+
+footer{
+    display: flex;
+    align-self: end;
 }

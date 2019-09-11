@@ -1,4 +1,4 @@
-//Nav Menu Principal
+// Nav Menu Principal
 document.getElementById("button-menu1").addEventListener("click", () =>{
   document.getElementById("news-screen").style.display="block";
   document.getElementById("home").style.display="none";
@@ -22,12 +22,12 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   });
 
 
-// document.getElementById("imagen-logo").addEventListener("click", () =>{
-// document.getElementById("news-screen").style.display="none";
-// document.getElementById("home").style.display="block";
-// document.getElementById("listado-screen").style.display="none";
-// document.getElementById("estadisticas-screen").style.display="none";
-// });
+document.getElementById("imagen-logo").addEventListener("click", () =>{
+document.getElementById("news-screen").style.display="none";
+document.getElementById("home").style.display="block";
+document.getElementById("listado-screen").style.display="none";
+document.getElementById("estadisticas-screen").style.display="none";
+});
 
 
   
@@ -146,9 +146,11 @@ container.innerHTML += `<div>
 
 
 // Mostrar Funcion Calculo con Ul / li 
-const containerCalcu = document.getElementById("altura");
-containerCalcu.addEventListener("click", (event) => { 
-  document.getElementById("calculoresult").innerHTML = (window.calcuData.computeStats(data, event.target.getAttribute('value')));
+const buttonHeight= document.getElementById("height")
+const containerCalcu = document.getElementById("calculoresult");
+buttonHeight.addEventListener("click", () => { 
+const resultHeight = window.calcuData.computeStats(data) 
+containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  resultHeight;
 });
 
 
