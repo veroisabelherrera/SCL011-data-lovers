@@ -4,35 +4,46 @@
   //para filtrar por candy
   
   window.filterData={
-   firstFilterCandy:(data, valueCandy) => {
-    const dataFilterCandy = data.filter(element => {
-    return element.candy_count == (valueCandy) 
-    
-     })
-    
-    return dataFilterCandy
-    },
-
-//para filtrar por eggs
-   secondFilterEggs:(data, valueEgg) => {
-     const dataFilterEgg = data.filter(element => {
-     return element.egg == (valueEgg) 
-   
+    firstFilterCandy:(data, valueCandy) => {
+     const dataFilterCandy = data.filter(element => {
+     return element.candy_count == (valueCandy) 
+     
       })
-   
-     return dataFilterEgg
+     
+     return dataFilterCandy
      },
-     //para filtrar por Type
-     thirdFilterType:(data,valueTypePokemon) =>{
-       const dataFilterPokemonType= data.filter(element =>{
-         return element.type.includes(valueTypePokemon) 
-       })
-
-       return dataFilterPokemonType;
-     }
- }
-
+ 
+ //para filtrar por eggs
+    secondFilterEggs:(data, valueEgg) => {
+      const dataFilterEgg = data.filter(element => {
+      return element.egg == (valueEgg) 
     
+       })
+   
+      return dataFilterEgg
+      },
+      //para filtrar por Type
+      thirdFilterType:(data,valueTypePokemon) =>{
+        const dataFilterPokemonType= data.filter(element =>{
+          return element.type.includes(valueTypePokemon) 
+        })
+ 
+        return dataFilterPokemonType;
+      }
+  }
+ 
+    //const data = POKEMON.pokemon
+  //if sortOrder=a-z valor que tomare desde el select colocar como
+   //sorby =name , id valor que no se de donde tomar 
+   //const sortOrder = "Z-A"
+   //let numero = "id"
+ // bAveriguar como agregar sort
+ 
+ 
+   //funcion para ordenar por pokedex
+   
+   //console.log(ordenarPokemon);
+
       
    //const data = POKEMON.pokemon
  //if sortOrder=a-z valor que tomare desde el select colocar como
@@ -59,22 +70,89 @@ return ordenarPokemon
 }}; 
   //console.log(ordenarPokemon);
   
-   
-//   if (pk1.id >pk2.id) { 
-//     return 1;
-//   }
-//   if (pk1.id < pk2.id) {
-//     return -1;
-//   }
-//   return 0
-//   } )
-//   console.log(ordenarPk);
-  
-// return (pk1.name < pk2.name) ? -1 :  // como opcion para ordenar alfabeticamente
 
-//Ordenar pk za
-//  const ordenarPk = data.sort((pk1, pk2 ) => {
    
+    
+ //   if (pk1.id >pk2.id) { 
+ //     return 1;
+ //   }
+ //   if (pk1.id < pk2.id) {
+ //     return -1;
+ //   }
+ //   return 0
+ //   } )
+ //   console.log(ordenarPk);
+   
+
+ // return (pk1.name < pk2.name) ? -1 :  // como opcion para ordenar alfabeticamente
+ 
+ //Ordenar pk za
+ //  const ordenarPk = data.sort((pk1, pk2 ) => {
+    
+ //   if (pk2.id >pk1.id) {
+ //     return 1;
+ //   }
+ //   if (pk2.id < pk1.id) {
+ //     return -1;
+ //   }
+ //   return 0
+ //   } )
+ //   console.log(ordenarPk);
+ 
+ 
+ 
+   //funciona para calculos
+ 
+ window.calcuData={
+   computeStats:(data, alturaPoke) => {
+     let tipoPorcen = [];
+     for (let i = 0; i < data.length; i++) {
+       for (let x = 0; x < data[i].height.length; x++) {
+         if (data[i].height[x] === alturaPoke) {
+           tipoPorcen.push(data[i].height[x]);
+         }
+       }
+     }
+     return ('El porcentaje del pokemon de tipo  es: ' + ((tipoPorcen.length) / (alturaPoke)).toFixed(2).bold() + '%');
+   }
+ };
+ 
+ 
+ 
+ 
+ /*
+ var suma = 0;
+ 
+ for(var x = 0; x < arreglo.length; x++){
+   suma += arreglo[x];
+ }
+ var promedio = suma / arreglo.length;
+ */
+ 
+ 
+ 
+ 
+ /*
+ suma=elemento1+elemento2+elemento3
+ promedio=suma/3
+ */
+ 
+ 
+ 
+ /*
+ // Calcular el promedio de ingresos de todos los usuarios.
+ import { prop, map, reduce, add, compose } from 'ramda';
+ const average = (xs) => reduce(add, 0, xs) / xs.length;
+ const incomesAverage = compose(average, map(prop('incomes')));
+ incomesAverage(USERS) // 8333.333
+ */
+ 
+ 
+  
+   
+ 
+ 
+
 //   if (pk2.id >pk1.id) {
 //     return 1;
 //   }
@@ -84,6 +162,7 @@ return ordenarPokemon
 //   return 0
 //   } )
 //   console.log(ordenarPk);
+
 
 
 
