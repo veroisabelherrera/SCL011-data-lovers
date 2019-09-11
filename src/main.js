@@ -28,7 +28,7 @@ document.getElementById("estadisticas-screen").style.display="none";
 });
 
 const selects1 = document.getElementById("listSelect");
-const containerFilters = document.getElementById("button-menu2")
+const containerFilters = document.getElementById("button-menu2");
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
 });
@@ -62,48 +62,7 @@ container.innerHTML += `<div>
 
   });
   
-  
-    
-  
-  const selects1 = document.getElementById("listSelect");
-  const containerFilters = document.getElementById("button-menu2")
-  containerFilters.addEventListener("click", ()=>{
-      selects1.style.display = "block";
-  });
-  
-  
-  
-  const data = window.POKEMON.pokemon;
-  
-  
-  
-  const container = document.getElementById("showPokemones")
-    const selectCandy  = document.getElementById("candy_count");
-    selectCandy.addEventListener("change", () =>{
-    let valueCandy = document.getElementById("candy_count").value
-  //let valueCandy = selectCandy.options[selectCandy.selectedIndex].value
-  
-   let prindCandy = window.filterData.firstFilterCandy(data, valueCandy)
-  
-  
-  //                  // imprimir resultados
-  document.getElementById("showPokemones").innerHTML="";
-  prindCandy.forEach(element => {
-  container.innerHTML += `<div>
-                            <div class="cartPk">
-                                <img class="imgPk" src = ${element.img}>
-                                  <div class="cartPk1">
-                                    <p id="pokeName"> ${element.name}</p>
-                                    <p id="pokedex"> # ${element.id}</p>
-                                  </div>
-  
-                            </div>
-                          </div>`
-      });
-    });
-  
-  
-  
+
   
       
       const selectEgg  = document.getElementById("type_egg");
@@ -174,9 +133,6 @@ container.innerHTML += `<div>
                                 `
 
           
-          
-  
-  
 
         
         })})
@@ -184,7 +140,7 @@ container.innerHTML += `<div>
 
 
 
-// Mostrar Funcion Calculo con Ul / li 
+// Mostrar Funcion Calculo
 const buttonHeight= document.getElementById("height")
 const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
