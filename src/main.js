@@ -54,6 +54,7 @@ container.innerHTML += `<div>
                                 <div class="cartPk1">
                                   <p id="pokeName"> ${element.name}</p>
                                   <p id="pokedex"> # ${element.id}</p>
+                                  <button>ver ficha</button>
                                 </div>
 
                           </div>
@@ -79,6 +80,7 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
+                                      <button>ver ficha</button>
                                      </div>
                                       </div>
                                       </div>
@@ -102,6 +104,7 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
+                                      <button>ver ficha</button>
                                      </div>
                                       </div>
                                       </div>
