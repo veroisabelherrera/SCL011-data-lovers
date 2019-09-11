@@ -16,30 +16,31 @@ body{
     background-position: center right;
 }
 
-
-/*.logopk{
-
-
+.logopk{
     height: 60px;
     margin-top: 20px;
     display: flex;
-    align-content: center;
+    justify-content: center;
+}
 
-
-.logo:hover{
+.logopk:hover{
     cursor: pointer;
-}*/
+}
 
 nav, header{
-    font-size:14px;
+    display: inline-block;
+    font-size: 14px;
     text-align: center;
-    background-color: white;
-
+    background-color: #FFCD02;
+    padding: 10px;
+    width: 100%;
 }
+
 nav a{ 
     color: blue;
     text-decoration: none;
 }
+
 nav li{
     display: inline-block;
     width: 15%;
@@ -51,10 +52,12 @@ nav li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+
 nav li:hover{
     background-color:rgba(0%, 0%, 100%, .3);
     color:#fff;
 }
+
 nav li:active{
     background-color: rgba(0%, 0%, 100%, .4);
     color:blue;
@@ -69,25 +72,27 @@ nav li:active{
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     padding-top: 20px;
 }
+
 h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    font-size: 24px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px; 
     margin: 40px;
     text-align: center;
 }
+
 h4{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 21px;
     font-weight: 400;
     margin-top: 60px;
 }
 
 .intro-text{
-    background-color: none;
+    background-color: #ffffff6e;
     margin: 60px 40px;
     padding: 20px 340px 20px 40px;
     text-align: left;
@@ -101,11 +106,6 @@ h4{
     color: #525252;
 }
 
-.title2
-{
-    font-size: 18px; 
-    margin: 40px  
-}
 .title5{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -115,8 +115,8 @@ h4{
 }
 
 .readmorebutton{
-    background-color: #fff;
-    padding: 6px 16px;
+    background-color: #ffffffb4;
+    padding: 5px 15px;
     border: solid;
     border-width: 4px;
     border-color: rgba(0%, 0%, 100%, .5);
@@ -126,7 +126,8 @@ h4{
     font-size: 14px;
     color: rgba(0%, 0%, 100%, .5);
     float: right;
-    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 .readmorebutton:hover{
@@ -160,7 +161,7 @@ p{
     border: solid;
     border-radius: 10px;
     border-width: 2px;
-    border-color: black;
+    border-color: #525252;
     font-size: 14px;
     height: 30px;
     padding: 5px;
@@ -169,17 +170,13 @@ p{
     margin: 10px;
 }
 
-
 #listSelect, #news-screen, #estadisticas-screen{
     display: none;
 }
 
-
 header{
     display: block;
 }
-
-
 
 #showPokemones{
     display: flex; 
@@ -187,7 +184,6 @@ header{
     width: 100%;
     margin: 0px;
     justify-content: center;
-
 }
 
 .cartPk{
@@ -203,7 +199,7 @@ header{
     justify-content: center;
 }
 
-
+.cartPk1{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -223,12 +219,39 @@ header{
 
 #pokeName, #pokedex{
     color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     align-content: center;
     width: 170px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.calculo-buttons{
+    margin: 20px;
+    list-style: none;
+}
+
+.calcubuttons{
+    background-color: #DBDBDB;
+    color: #525252;
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 20px;
+    vertical-align: 20px;
+}
+
+.calcubuttons:hover{
+    background-color: #FFCD02;
+}
+
+.calcubuttons:active{
+    background-color: #FFCD02;
 }
 
 
@@ -239,139 +262,63 @@ header{
 
 @media screen and (min-width:500px) and (max-width:1024px){
 
-    .homescreen{
-        background-image: url(https://i.ibb.co/xjNcXLj/fondohome.jpg);
-        background-size: cover;
-        background-position: center right;
-    }
-    
     .logopk{
         height: 50px;
         margin-top: 10px;
-        display: inline-flex;
-        justify-content: center;
-    
-    }
-    .logo:hover{
-        cursor: pointer;
-    }
-    nav, header{
-        background-color: #FFCD02;
-        align-content: center;
-        padding: 5px;
     }
 
-    ul li{
-        display: inline;
-        padding: 5px 10px;
-        background-color: none;
-        border: none;
-        color: blue;
-        margin: 5px 5px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    nav, header{
+        padding: 5px;
         font-size: 13px;
-        text-align: center;
     }
-    ul li:hover{
-        background-color:rgba(0%, 0%, 100%, .3);
-        color:#fff;
-    }
-    ul li:active{
-        background-color: rgba(0%, 0%, 100%, .4);
-        color:blue;
-        border-left-style: solid;
-        border-left: 5px solid;
-        border-right: 5px solid;
-        border-top: none;
-        border-bottom: none;
-        border-color: blue;
-        font-weight: bold;
+
+    nav li{
+        padding: 5px;
+        font-size: 12px;
     }
     
     h2{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 32px;
-        font-weight: bold;
+        font-size: 28px;
     }
+
     h3{
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-        font-size: 18px; 
-        margin: 40px;
-        text-align: center;
+        font-size: 24px; 
     }
+
     h4{
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
-        font-weight: 400;
-        text-align: justify;
-        color: black;
     }
     
     .intro-text{
-        background-color: #ffffff6e;
         margin: 20px 40px;
         padding: 40px;
         text-align: center;
     }
     
     .box-article, .title5{
-        background-color: none;
         padding: 40px 10px 40px 20px;
     }
+
     .title5{
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 16px;
-        color: blue;
-        padding-top: 20px;
     }
     
     .readmorebutton{
-        background-color:#ffffffb4;
-        padding: 5px 15px;
-        border: solid;
-        border-width: 3px;
-        border-color: rgba(0%, 0%, 100%, .6);
-        border-radius: 10px;
-        margin: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 12px;
-        color: rgba(0%, 0%, 100%, .5);
-        float: right;
         margin-bottom: 40px;
         margin-top: 0px;
     }
     
-    .readmorebutton:hover{
-        background-color: #fff;
-        color:blue;
-        border: solid;
-        border-width: 4px;
-        border-color: blue;
-        border-radius: 10px;
-    }
-    
     p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
-        display: inline-block;
         margin: 10px;
         text-align: center;
     }
     
     .select-list{
-        color: #525252;
         padding: 15px;
-        width: 100%;
     }
     
     .select{
-        display: inline-flex;
-        background-color: rgba(255, 204, 2, 0.9);
-        border: solid;
-        border-radius: 10px;
-        border-width: 2px;
-        border-color: #525252;
         font-size: 11px;
         height: 28px;
         padding: 2px;
@@ -381,64 +328,22 @@ header{
         align-content: center;
     }
     
-    
-    #listSelect, #news-screen, #estadisticas-screen{
-        display: none;
-    }
-    
-    
-    header{
-        display: block;
-    }
-    
-    
-    #showPokemones{
-        display: flex; 
-        flex-flow: wrap;
-        width: 100%;
-        margin: 0px;
-        justify-content: center;
-    }
-    
     .cartPk{
-        display: flex;
-        flex-wrap: wrap;
         margin: 20px;
         width: 165px;
         height: 225px;
-        border: solid;
-        border-color: #525252;
-        border-radius: 6px;
-        text-align: center;
-        justify-content: center;
     }
     
     .cartPk1{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: rgba(0%, 0%, 100%, .4);
-        padding: 5px;
-    }
-    
-    .imgPk{
-        height: 50%;
-        background-color: none;
-        align-content: center;
-        text-align: center;
-        align-items: center;
+       font-size: 14px;
     }
     
     #pokeName, #pokedex{
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
-        align-content: center;
         width: 135px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
-
 }
 
 
@@ -448,139 +353,60 @@ header{
 /*Responsive para telefonos*/
 
 @media screen and (max-width:500px){
-
-    .homescreen{
-        background-image: url(https://i.ibb.co/xjNcXLj/fondohome.jpg);
-        background-size: cover;
-        background-position: center right;
-    }
     
     .logopk{
         height: 40px;
         margin-top: 10px;
-        display: inline-flex;
-    
-    }
-    .logo:hover{
-        cursor: pointer;
-    }
-    nav, header{
-        background-color: #FFCD02;
-        align-content: center;
     }
 
-    ul li{
-        display: inline;
-        padding: 5px 10px;
-        background-color: none;
-        border: none;
-        color: blue;
-        margin: 5px 5px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    nav, header{
+        font-size: 11px;
+    }
+
+    nav li{
+        padding: 5px;
         font-size: 12px;
-        text-align: center;
     }
-    ul li:hover{
-        background-color:rgba(0%, 0%, 100%, .3);
-        color:#fff;
-    }
-    ul li:active{
-        background-color: rgba(0%, 0%, 100%, .4);
-        color:blue;
-        border-left-style: solid;
-        border-left: 5px solid;
-        border-right: 5px solid;
-        border-top: none;
-        border-bottom: none;
-        border-color: blue;
-        font-weight: bold;
-    }
-    
+
     h2{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 28px;
-        font-weight: bold;
+        font-size: 24px;
     }
+
     h3{
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-        font-size: 21px; 
-        margin: 40px;
+        font-size: 20px; 
         text-align: center;
     }
+
     h4{
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
-        font-weight: 400;
         text-align: justify;
-        color: black;
-        margin-block: 10px;
+        margin-bottom: 10px;
     }
     
     .intro-text{
-        background-color: #ffffff6e;
         margin: 20px 10px;
         padding: 20px;
         text-align: center;
     }
     
     .box-article, .title5{
-        background-color: none;
         padding: 5px 10px 10px 15px;
     }
+
     .title5{
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
-        color: blue;
-        margin-top: 20px;
     }
     
     .readmorebutton{
-        background-color:#ffffffb4;
-        padding: 5px 15px;
-        border: solid;
         border-width: 3px;
-        border-color: rgba(0%, 0%, 100%, .6);
-        border-radius: 10px;
-        margin: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 11px;
-        color: rgba(0%, 0%, 100%, .5);
-        float: right;
-        margin-bottom: 40px;
-        margin-top: 0px;
-    }
-    
-    .readmorebutton:hover{
-        background-color: #fff;
-        color:blue;
-        border: solid;
-        border-width: 4px;
-        border-color: blue;
-        border-radius: 10px;
-    }
-    
-    p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
-        display: inline-block;
-        margin: 10px;
-        text-align: center;
     }
     
     .select-list{
-        color: #525252;
-        padding: 10px;
-        width: 100%;
+        font-size: 10px;
     }
     
     .select{
-        display: flex;
-        background-color: #FFCD02;
-        border: solid;
-        border-radius: 10px;
-        border-width: 2px;
-        border-color: #525252;
         font-size: 11px;
         height: 28px;
         padding: 2px;
@@ -588,64 +414,21 @@ header{
         letter-spacing: 0.3px;
         margin: 5px;
         align-content: center;
-    }
-    
-    
-    #listSelect, #news-screen, #estadisticas-screen{
-        display: none;
-    }
-    
-    
-    header{
-        display: block;
-    }
-    
-    
-    #showPokemones{
-        display: flex; 
-        flex-flow: wrap;
-        width: 100%;
-        margin: 0px;
-        justify-content: center;
-    }
-    
+    }    
+
     .cartPk{
-        display: flex;
-        flex-wrap: wrap;
         margin: 10px;
         width: 110px;
         height: 150px;
-        border: solid;
-        border-color: #525252;
-        border-radius: 6px;
-        text-align: center;
-        justify-content: center;
     }
     
     .cartPk1{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: rgba(0%, 0%, 100%, .4);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 12px;
-        padding: 5px;
     }
-    
-    .imgPk{
-        height: 50%;
-        background-color: none;
-        align-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    
+
     #pokeName, #pokedex{
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
-        align-content: center;
-        width: 85px;
+        width: 60px;
         margin-top: 5px;
         margin-bottom: 5px;
     }

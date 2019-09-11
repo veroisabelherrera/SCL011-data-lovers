@@ -21,17 +21,14 @@ document.getElementById("button-menu1").addEventListener("click", () =>{
   });
 
 
-/*document.getElementById("imagen-logo").addEventListener("click", () =>{
+document.getElementById("imagen-logo").addEventListener("click", () =>{
 document.getElementById("news-screen").style.display="none";
 document.getElementById("home").style.display="block";
 document.getElementById("listado-screen").style.display="none";
 document.getElementById("estadisticas-screen").style.display="none";
-});*/
+});
 
 
-
-  
-  
   
 
 const selects1 = document.getElementById("listSelect");
@@ -42,7 +39,7 @@ containerFilters.addEventListener("click", ()=>{
 
 
 
-const data =window.POKEMON.pokemon;
+const data = window.POKEMON.pokemon;
 
 
 
@@ -143,3 +140,14 @@ container.innerHTML += `<div>
                                 `
         
         })})
+
+
+
+
+// Mostrar Funcion Calculo con Ul / li 
+const containerCalcu = document.getElementById("altura");
+containerCalcu.addEventListener("click", (event) => { 
+  document.getElementById("calculoresult").innerHTML = (window.calcuData.computeStats(data, event.target.getAttribute('value')));
+});
+
+

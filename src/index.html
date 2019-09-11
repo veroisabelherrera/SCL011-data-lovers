@@ -11,117 +11,133 @@
 <div id="root">
 
     <!--Header Nav-->
-        <header id="headermenu"> <br>
+    <header id="headermenu"> <br>
 
-            <!--<img class="logopk" alt="logo de pokemon" id="imagen-logo" src="SCL011-data-lovers/Imgs_DataLovers/pokemon-logo.png"/>-->
-
-            
-            
-
-            <nav>
-                <ul class="mainmenu">
-                    <li><a href="#" id="button-menu1">Actualidad</a></li>
-                    <li><a href="#" id="button-menu2">Listado Pokémones</a></li>
-                    <li><a href="#" id="button-menu3">Estadisticas</a></li>
-                </ul>
-            </nav>
-        </header>
+        <img class="logopk" alt="logo de pokemon" id="imagen-logo" src="../Imgs_DataLovers/pokemon-logo.png"/>
+        <nav>
+            <ul class="mainmenu">
+                <li><a href="#" id="button-menu1">Actualidad</a></li>
+                <li><a href="#" id="button-menu2">Listado Pokémones</a></li>
+                <li><a href="#" id="button-menu3">Estadisticas</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
 
     <!--Pantalla Home-->
 
     <div id="home" class="homescreen">
-               <section>
-                        <article class="intro-text">
-                            <h2 class="title2">Bienvenidos a la Pokémania</h2>
-                                <h4 class="title4">Aquí podrás conocer mas de cerca los 151 Pokémones de la Región de Kanto...
-                                Los datos más relevantes como sus tipos de elementos, huevos o la cantidad de Candys
-                                necesarios para hacerlos evolucionar.</h4>
-                                <h4 class="title4">También podrás mantenerte actualizado con las noticias y actualizaciones más
-                                recientes que envuelven a tus Pokémones favoritos</h4>
-                                <h4 class="title4">Por último, podrás conocer algunos datos y cálculos extras que te ayudarán a conocer mejor
-                                tus mejores aliados Pokémones.</h4>
-                        </article>
-               </section>
+        <section>
+            <article class="intro-text">
+                <h2 class="title2">Bienvenidos a la Pokémania</h2>
+                    <h4 class="title4">Aquí podrás conocer mas de cerca los 151 Pokémones de la Región de Kanto...
+                    Los datos más relevantes como sus tipos de elementos, huevos o la cantidad de Candys
+                    necesarios para hacerlos evolucionar.</h4>
+                    <h4 class="title4">También podrás mantenerte actualizado con las noticias y actualizaciones más
+                    recientes que envuelven a tus Pokémones favoritos</h4>
+                    <h4 class="title4">Por último, podrás conocer algunos datos y cálculos extras que te ayudarán a conocer mejor
+                    tus mejores aliados Pokémones.</h4>
+            </article>
+        </section>
     </div>
 
 
+
     <!--Pantalla Info-->
-        <div id="news-screen" class="homescreen">
-            <dl class="box-article">
-                <dt class="title5">Moviplaya</dt>
+
+    <div id="news-screen" class="homescreen">
+        <dl class="box-article">
+            <dt class="title5">Moviplaya</dt>
+                <button class="readmorebutton">Leer más</button>
+        </dl>
+        <dl class="box-article">
+            <dt class="title5">Campañas en IFEMA de Pokémon</dt>
+                <button class="readmorebutton">Leer más</button>
+        </dl>
+        <dl class="box-article">
+            <dt class="title5">VGC's</dt>
                 <button class="readmorebutton">Leer más</button>
             </dl>
-            <dl class="box-article">
-                <dt class="title5">Campañas en IFEMA de Pokémon</dt>
-                <button class="readmorebutton">Leer más</button>
-            </dl>
-            <dl class="box-article">
-                <dt class="title5">VGC's</dt>
-                <button class="readmorebutton">Leer más</button>
-            </dl>
-        </div>
+    </div>
+
 
 
     <!--Pantalla Listado-->
+
     <div id="listSelect">
-        <h3 class="title2">       Conoce más de cerca todos los Pokemones de la Región de Kanto</h3>
+        <h3 class="title2">Conoce más de cerca todos los Pokemones de la Región de Kanto</h3>
             <div id="selectMenu" class="select-list">
                 <p>Ordenar por:</p>
-                <select class="select" id="orden-pokedex">Ordenar
-                    <option value="">Ordenar por</option>
-                    <option value="1-151">Orden Ascendente Pokedex</option>
-                    <option value="151-1">Orden Descendente Pokedex</option>
-                </select>
+                    <select class="select" id="orden-pokedex">Ordenar
+                        <option value="">Ordenar por</option>
+                        <option value="1-151">Orden Ascendente Pokedex</option>
+                        <option value="151-1">Orden Descendente Pokedex</option>
+                    </select>
 
                 <p>Mostrar por:</p>
-                <select class="select" id="type_Pokemon">Tipo
-                    <option value="">Tipo</option>
-                    <option value="Water">Agua</option>
-                    <option value="Bug">Bicho</option>
-                    <option value="Dragon">Dragón</option>
-                    <option value="Electric">Eléctrico</option>
-                    <option value="Ghost">Fantasma</option>
-                    <option value="Fire">Fuego</option>
-                    <option value="Ice">Hielo</option>
-                    <option value="Grass">Hierba</option>
-                    <option value="Fighting">Luchador</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Psychic">Psíquico</option>
-                    <option value="Rock">Roca</option>
-                    <option value="Ground">Tierra</option>
-                    <option value="Poison">Veneno</option>
-                    <option value="Flying">Volador</option>
-                </select>
+                    <select class="select" id="type_Pokemon">Tipo
+                        <option value="">Tipo</option>
+                        <option value="Water">Agua</option>
+                        <option value="Bug">Bicho</option>
+                        <option value="Dragon">Dragón</option>
+                        <option value="Electric">Eléctrico</option>
+                        <option value="Ghost">Fantasma</option>
+                        <option value="Fire">Fuego</option>
+                        <option value="Ice">Hielo</option>
+                        <option value="Grass">Hierba</option>
+                        <option value="Fighting">Luchador</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Psychic">Psíquico</option>
+                        <option value="Rock">Roca</option>
+                        <option value="Ground">Tierra</option>
+                        <option value="Poison">Veneno</option>
+                        <option value="Flying">Volador</option>
+                    </select>
 
                 
-                <select class="select" id="type_egg">
-                    <option value="">Huevos</option>
-                    <option value="2 km">Huevos de 2 km</option>
-                    <option value="5 km">Huevos de 5 km</option>
-                    <option value="10 km">Huevos de 10 km</option>
-                    <option value="Not in Eggs">Sin huevo</option>
-                </select>
+                    <select class="select" id="type_egg">
+                        <option value="">Huevos</option>
+                        <option value="2 km">Huevos de 2 km</option>
+                        <option value="5 km">Huevos de 5 km</option>
+                        <option value="10 km">Huevos de 10 km</option>
+                        <option value="Not in Eggs">Sin huevo</option>
+                    </select>
 
-                <select class="select" id="candy_count">
-                    <option value="">Candy</option>
-                    <option value="12">12 Caramelos</option>
-                    <option value="25">25 Caramelos</option>
-                    <option value="50">50 Caramelos</option>
-                    <option value="100">100 Caramelos</option>
-                    <option value="400">400 Caramelos</option>
-                    
-                </select> <hr> <br>  
-            
+                    <select class="select" id="candy_count">
+                        <option value="">Candy</option>
+                        <option value="12">12 Caramelos</option>
+                        <option value="25">25 Caramelos</option>
+                        <option value="50">50 Caramelos</option>
+                        <option value="100">100 Caramelos</option>
+                        <option value="400">400 Caramelos</option>
+                    </select>
+            </div>
                 <div id="showPokemones" class="cardsPokemones">
                 </div>    
-            </div>
+
+    </div>
+
+
 
 
     <!--Pantalla Estadisticas-->
+
     <div id="estadisticas-screen">
-            <h3 class="title2">Conoce algunos datos promedios de tus pokemones favoritos</h3>
+        <h3 class="title2">Conoce algunos datos promedios de tus pokemones favoritos</h3>
+            <ul class="calculo-buttons">
+                <li><button id="altura" class="calcubuttons">Altura</button></li>
+                <li><button id="peso" class="calcubuttons">Peso</button></li>
+                <li><button id="debilidad" class="calcubuttons">Debilidad</button></li>
+            </ul>
+        </div>
+            <div class="contListCalc">
+                <div id="list-calculo" class="list-fondo">
+                    <div id="calculoresult">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     
