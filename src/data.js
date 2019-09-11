@@ -52,7 +52,12 @@ return ordenarPokemon
   //console.log(ordenarPokemon);
   
    //funciona para calculos
+
+  
  
+
+ 
+
  window.calcuData={
    computeStats:(data ) => {
 const averageHeigh = (data.map(element => parseFloat(element.height)))
@@ -66,53 +71,16 @@ for(let i = 0; i < averageHeigh.length; i++){
   
   
    }}
-//  var promedio = suma / arreglo.length;
- 
- 
- 
- 
- 
- /*
- suma=elemento1+elemento2+elemento3
- promedio=suma/3
- */
- 
- 
- 
- /*
- // Calcular el promedio de ingresos de todos los usuarios.
- import { prop, map, reduce, add, compose } from 'ramda';
- const average = (xs) => reduce(add, 0, xs) / xs.length;
- const incomesAverage = compose(average, map(prop('incomes')));
- incomesAverage(USERS) // 8333.333
- */
- 
- //      let tipoPorcen = [];
-//      for (let i = 0; i < data.length; i++) {
-//        for (let x = 0; x < data[i].height.length; x++) {
-//          if (data[i].height[x] === alturaPoke) {
-//            tipoPorcen.push(data[i].height[x]);
-//          }
-//        }
-//      }
-//      return ('El porcentaje del pokemon de tipo  es: ' + ((tipoPorcen.length) / (alturaPoke)).toFixed(2).bold() + '%');
-//    }
-//  };
-  
-   
- 
- 
 
-//   if (pk2.id >pk1.id) {
-//     return 1;
-//   }
-//   if (pk2.id < pk1.id) {
-//     return -1;
-//   }
-//   return 0
-//   } )
-//   console.log(ordenarPk);
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
