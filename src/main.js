@@ -28,7 +28,7 @@ document.getElementById("estadisticas-screen").style.display="none";
 });
 
 const selects1 = document.getElementById("listSelect");
-const containerFilters = document.getElementById("button-menu2")
+const containerFilters = document.getElementById("button-menu2");
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
 });
@@ -61,9 +61,6 @@ container.innerHTML += `<div>
     });
 
   });
-  
-  
-  
   
   
       const selectEgg  = document.getElementById("type_egg");
@@ -134,9 +131,6 @@ container.innerHTML += `<div>
                                 `
 
           
-          
-  
-  
 
         
         })})
@@ -144,7 +138,7 @@ container.innerHTML += `<div>
 
 
 
-// Mostrar Funcion Calculo con Ul / li 
+// Mostrar Funcion Calculo
 const buttonHeight= document.getElementById("height")
 const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
