@@ -73,6 +73,7 @@ for(let i = 0; i < averageHeigh.length; i++){
    }}
 
  
+   
  
  
  

@@ -12,8 +12,8 @@ body{
 
 .homescreen{
     background-image: url(../Imgs_DataLovers/fondohome.jpg);
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 
@@ -27,12 +27,12 @@ body{
 }
 
 nav, header{
+    background-color: #FFCD02;
     display: inline-flexbox;
     font-size: 14px;
-    text-align: center;
-    background-color: #FFCD02;
-    width: 100%;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 nav a{ 
@@ -41,13 +41,13 @@ nav a{
 }
 
 nav li{
-    display: inline-block;
-    width: 15%;
-    padding: 5px 10px;
     background-color: none;
     border: none;
+    display: inline-block;
     margin: 10px 20px;
+    padding: 5px 10px;
     text-align: center;
+    width: 15%;
 }
 
 nav li:hover{
@@ -56,13 +56,13 @@ nav li:hover{
 
 nav li:active{
     background-color: rgba(0%, 0%, 100%, .4);
-    color:blue;
+    border-bottom: none;
+    border-color: blue;
     border-left-style: solid;
     border-left: 5px solid;
     border-right: 5px solid;
     border-top: none;
-    border-bottom: none;
-    border-color: blue;
+    color:blue;
     font-weight: bold;
 }
 
@@ -92,45 +92,45 @@ h4{
 
 .box-article, .title5, .news{
     background-color: none;
+    color: #525252;
     padding: 60px 60px 60px 20px;
     text-align: left;
-    color: #525252;
 }
 
 .title5{
-    font-weight: bold;
-    font-size: 18px;
     color: blue;
+    font-size: 18px;
+    font-weight: bold;
     padding-top: 20px;
 }
 
 .readmorebutton{
     background-color: #ffffffb4;
-    padding: 5px 15px;
     border: solid;
-    border-width: 4px;
     border-color: rgba(0%, 0%, 100%, .5);
     border-radius: 10px;
-    margin: 20px;
-    font-size: 14px;
+    border-width: 4px;
     color: rgba(0%, 0%, 100%, .5);
     float: right;
+    font-size: 14px;
+    margin: 20px;
     margin-bottom: 40px;
     margin-top: 0px;
+    padding: 5px 15px;
 }
 
 .readmorebutton:hover{
     background-color: #fff;
-    color:blue;
     border: solid;
-    border-width: 4px;
     border-color: blue;
     border-radius: 10px;
+    border-width: 4px;
+    color:blue;
 }
 
 p{
-    font-size: 12px;
     display: inline-block;
+    font-size: 12px;
     margin: 20px;
 }
 
@@ -143,18 +143,18 @@ p{
 }
 
 .select{
-    display: inline-block;
     background-color: rgba(255, 204, 2, 0.9);
     border: solid;
+    border-color: #525252;
     border-radius: 10px;
     border-width: 2px;
-    border-color: #525252;
+    display: inline-block;
     font-size: 14px;
     height: 30px;
-    padding: 5px;
-    width: 140px;
     letter-spacing: 0.5px;
     margin: 10px;
+    padding: 5px;
+    width: 140px;
 }
 
 #listSelect, #news-screen, #estadisticas-screen{
@@ -168,67 +168,68 @@ header{
 #showPokemones{
     display: flex; 
     flex-flow: wrap;
-    width: 100%;
-    margin: 0px;
     justify-content: center;
+    margin: 0px;
+    width: 100%;
 }
 
 .cartPk{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-    width: 220px;
-    height: 300px;
     border: solid;
     border-color: #525252;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
     justify-content: center;
+    margin: 30px;
+    width: 220px;
 }
 
 .cartPk1{
+    background-color: rgba(0%, 0%, 100%, .4);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: rgba(0%, 0%, 100%, .4);
     font-size: 16px;
+    height: 125px;
+    justify-content: center;
     padding: 5px;
+    text-align: center;
 }
 
 .imgPk{
-    height: 50%;
-    background-color: none;
     align-content: center;
+    background-color: none;
+    height: 55%;
+    justify-content: center;
     text-align: center;
-    align-items: center;
 }
 
 #pokeName, #pokedex{
     color: blue;
     font-size: 16px;
-    align-content: center;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 5px;
     width: 170px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .calculo-buttons{
-    margin: 20px;
     list-style: none;
+    margin: 20px;
 }
 
-.calcubuttons{
+.calcubuttons, .buttoncard{
     background-color: #DBDBDB;
-    color: #525252;
-    height: 30px;
-    width: 120px;
     border: none;
     border-radius: 8px;
-    letter-spacing: 0.2px;
-    font-weight: bold;
+    color: #525252;
     font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    letter-spacing: 0.2px;
     margin: 20px;
     vertical-align: 20px;
+    width: 120px;
 }
 
 .calcubuttons:hover{
@@ -243,6 +244,11 @@ header{
     text-align: center;
 }
 
+.buttoncard{
+    background-color: blue;
+    color: white;
+    margin-top: 5px;
+}
 
 
 
@@ -257,13 +263,13 @@ header{
     }
 
     nav, header{
-        padding: 5px;
         font-size: 13px;
+        padding: 5px;
     }
 
     nav li{
-        padding: 5px;
         font-size: 12px;
+        padding: 5px;
     }
     
     h2{
@@ -308,30 +314,31 @@ header{
     }
     
     .select{
+        align-content: center;
         font-size: 11px;
         height: 28px;
-        padding: 2px;
-        width: 110px;
         letter-spacing: 0.3px;
         margin: 5px;
-        align-content: center;
+        padding: 2px;
+        width: 110px;
     }
     
     .cartPk{
-        margin: 20px;
-        width: 165px;
         height: 225px;
+        margin: 25px;
+        margin-top: 40px; 
+        width: 165px;
     }
     
     .cartPk1{
-       font-size: 14px;
+        height: 90px;
+        justify-content: center;
     }
     
     #pokeName, #pokedex{
-        font-size: 14px;
-        width: 135px;
+        font-size: 12px;
         margin-top: 5px;
-        margin-bottom: 5px;
+        width: 135px;
     }
 }
 
@@ -350,11 +357,12 @@ header{
 
     nav, header{
         font-size: 11px;
+        justify-content: center;
     }
 
     nav li{
-        padding: 5px;
         font-size: 12px;
+        padding: 5px;
     }
 
     h2{
@@ -368,15 +376,15 @@ header{
 
     h4{
         font-size: 18px;
-        text-align: justify;
         margin-bottom: 10px;
+        text-align: justify;
     }
     
     .intro-text{
+        background-color: #ffffff6e;
         margin: 20px 10px;
         padding: 20px;
         text-align: center;
-        background-color: #ffffff6e;
     }
     
     .box-article, .title5{
@@ -394,44 +402,52 @@ header{
     
     .select-list{
         font-size: 10px;
+        justify-content: center;
+        width: 100%;
     }
     
     .select{
+        display: flex;
         font-size: 11px;
-        height: 28px;
-        padding: 2px;
-        width: 100px;
         letter-spacing: 0.3px;
-        margin: 5px;
-        align-content: center;
+        padding: 2px;
     }    
 
     .cartPk{
+        height: 150px;
+        justify-content: center;
         margin: 10px;
         width: 110px;
-        height: 150px;
     }
     
     .cartPk1{
-        font-size: 12px;
+        height: 60px;
+        justify-content: center;
+        width: 100px;
     }
 
     #pokeName, #pokedex{
-        font-size: 12px;
-        width: 60px;
+        font-size: 11px;
         margin-top: 5px;
-        margin-bottom: 5px;
+        width: 60px;
+    }
+
+    .buttoncard{
+        background-color: blue;
+        color: white;
+        font-size: 10px;
+        margin-top: 5px;
+        width: 90px;
     }
 }
 
-
 .icono i{
-
     font-size: 120%;
 }
 
 
 footer{
-    display: flex;
     align-self: end;
+    display: flex;
 }
+

@@ -54,7 +54,7 @@ container.innerHTML += `<div>
                                 <div class="cartPk1">
                                   <p id="pokeName"> ${element.name}</p>
                                   <p id="pokedex"> # ${element.id}</p>
-                                  <button>ver ficha</button>
+                                  <button class="buttoncard">ver ficha</button>
                                 </div>
 
                           </div>
@@ -80,7 +80,7 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <button>ver ficha</button>
+                                      <button class="buttoncard">ver ficha</button>
                                      </div>
                                       </div>
                                       </div>
@@ -104,7 +104,7 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <button>ver ficha</button>
+                                      <button class="buttoncard">ver ficha</button>
                                      </div>
                                       </div>
                                       </div>
@@ -127,7 +127,7 @@ container.innerHTML += `<div>
                                     <div class="cartPk1">
                                         <p id="pokeName"> ${element.name}</p>
                                         <p id="pokedex"> # ${element.id}</p>
-                                        <button>ver ficha</button>
+                                        <button class="buttoncard">ver ficha</button>
                                     </div>
                                   </div>
                                 </div>
@@ -146,8 +146,9 @@ const buttonHeight= document.getElementById("height")
 const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
-containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  resultHeight;
+containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (resultHeight).toFixed(2).bold();
 });
+
 
 
 
