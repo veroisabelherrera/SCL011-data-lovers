@@ -17,22 +17,43 @@ Por lo que basado en esto requerimientos se crea el sitio “POKEMANÍA” el lu
 Nuestro usuario son adultos jóvenes de entre 20 a 30 años que usan la plataforma de juego varios de a la semana es decir que son  jugadores  bastantes activos,  de nivel intermedio.
 Estos conocen o tienen alguna referencia de los Pokémons, puesto que conocen la serie de televisión y además jugaban sus versiones anteriores de gameboy advance, lo que los hace jugadores bastante interiorizados en el tema.
 
-## **Entrevistas**
+## **Entrevistas** :microphone:
 
 Para conocer los requerimientos del usuario se planifica y elabora una entrevista, la cual contenía preguntas abiertas y cerradas.
+
 Esta se realizan a 5 jugadores de la aplicación, en lo cual se puedo concluir que la información  que les interesa es:
  -Los pokemon que pueden salir en los huevo de  2 km ,5km, 10km puesto que     quieren  conocer  si caminar dicha distancia les traerá un pokemon que les interese o ayude.
+
  -El contador de caramelos ya que estos datos les servirá para conocer con  cuantos caramelos se evoluciona a su pokemon a la siguiente versión, porque en la mayor parte de las ocasiones capturan al Pokémon en su primera etapa.
  -Los tipos de pokemon que existen
+
  -Talla y peso: datos importantes al momento de pelear en un gimnasio y para tener información adicional
  -Debilidades que posee los Pokémon
+
  -Listado pokemon en orden pokedex puesto que lo relacionan a la serie
+
  -Datos de promedio de peso y talla
+
 Respecto a  información general  les interesa tener acceso a noticas, actualizaciones y datos relevantes para completar su experiencia con el juego
 
-## **Planificación de diseño**
+Link entrevistas:
 
-Para comenzar planificación de página web se crea un [trello]() el cual contiene las tareas que se deben realizar para completar proyecto (Adjuntar Link de trello)
+[Entrevistado1](https://www.dropbox.com/s/hsrunu83u2epk7h/erick%20entrevista.m4a?dl=0)
+
+[Entrevistado2](https://www.dropbox.com/s/x7ocshfhgex0wgl/teddy%20entrevista%201.m4a?dl=0)
+
+[Entrevistado3](https://www.dropbox.com/s/535fy8kpxvho3fe/emilio%20entrevista.m4a?dl=0)
+
+[Entrevistado4 parte1](https://www.dropbox.com/s/q2p19b253k5a705/jorge%20entrevista.m4a) 
+
+[Entrevistado 4 parte2](https://www.dropbox.com/s/yfwn8b5kasc94pp/jorge%20entrevista%202.m4a?dl=0)
+
+[Entrevistado5](https://www.dropbox.com/s/glybrgbkglplply/Ronald%20entrevista.m4a?dl=0)
+
+
+## **Planificación de diseño** :pencil:
+
+Para comenzar planificación de página web se crea un [trello](https://trello.com/b/edCvMqsd/data-lovers) el cual contiene las tareas que se deben realizar para completar proyecto.
 
 Luego realiza flujo en papel primer flujo en papel 
 
@@ -90,3 +111,18 @@ Criterios de aceptación: tres filtros (Eggs , Candy y types ), select para cada
 Criterios de aceptación: select con la opción de ordenar, pokemones ordenados de forma ascendente y descendente, cada pokémon en tarjeta individual con el mismo diseño de las otras tarjetas, pokémon salgan ordenados correctamente.
 
 -Yo como usuario me gustaría tener   un cálculo agregado  para conocer el promedio de altura, peso y debilidad de los pokemon 
+
+## **¿Cómo acceder a la aplicación?**
+
+Para ingresar a la página debe hacerlo a través del siguiente [Link](https://martcamila1.github.io/SCL011-data-lovers/src/index.html)
+
+-Primero encontrara una pequeña introducción a “POKEMANÍA”
+
+-Tendrás un menú con tres opciones:
+
+   -Primero un  apartado de noticias
+
+   -En segundo lugar  un listado pokémons donde los podrás ordenar en orden pokédex (ascendente y descendente), filtrar según su tipo, caramelos y huevos de 2 , 5 y 10 km.
+
+   -Por ultimo estadísticas, donde conocer el promedio de estatura y peso de pokémons.
+

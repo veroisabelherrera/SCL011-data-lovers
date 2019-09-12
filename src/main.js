@@ -146,5 +146,10 @@ const resultHeight = window.calcuData.computeStats(data)
 containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  resultHeight;
 });
 
-
+//Calculo 2
+const buttonWeight= document.getElementById("Weight")
+buttonWeight.addEventListener("click", () => { 
+const resultWeight = window.calcuData.computeStatswWeight(data) 
+containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  resultWeight +"kg";
+});
 

@@ -56,29 +56,38 @@ return ordenarPokemon
   
  
 
+   window.calcuData={
+    computeStats:(data) => {
+ const averageHeigh = data.map(element => {
+   return parseFloat(element.height)})
+  let add = 0;
+ for(let i = 0; i < averageHeigh.length; i++){
+     add += averageHeigh[i];
+   }
+   let average =parseFloat(add/averageHeigh.length) 
  
-
- window.calcuData={
-   computeStats:(data ) => {
-const averageHeigh = (data.map(element => parseFloat(element.height)))
- let add = 0;
-for(let i = 0; i < averageHeigh.length; i++){
-    add += averageHeigh[i];
+   return average;
+   
+   
+    },
+  
+  
+    computeStatswWeight:(data) => {
+ const averageWeight = data.map(element => {
+   return parseFloat(element.weight)})
+  let add = 0;
+ for(let i = 0; i < averageWeight .length; i++){
+     add += averageWeight [i];
+   }
+   let average =parseFloat(add/averageWeight.length) 
+ 
+   return average;
+   
+   
+    }
   }
-  let average = add/151
+ 
 
-  return average;
-  
-  
-   }}
-
- 
- 
- 
- 
- 
- 
- 
  
  
 

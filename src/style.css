@@ -46,7 +46,6 @@ nav li{
     padding: 5px 10px;
     background-color: none;
     border: none;
-    color: blue;
     margin: 10px 20px;
     text-align: center;
 }
@@ -434,5 +433,17 @@ header{
 
 footer{
     display: flex;
-    align-self: end;
+    flex-direction:row;
+    align-self:flex-end
+    
+    
+}
+
+.icono , .names{
+    display: flex;
+    align-items:flex-end;
+    
+   
+
+  
 }
