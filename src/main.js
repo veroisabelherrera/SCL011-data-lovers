@@ -151,7 +151,10 @@ const buttonHeight= document.getElementById("height")
 const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
+
 containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (resultHeight).toFixed(2).bold() + "m";
+
+
 });
 
 //Calculo 2

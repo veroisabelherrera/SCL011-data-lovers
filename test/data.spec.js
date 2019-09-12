@@ -5,17 +5,6 @@ require('../src/data.js');
 require('./data.spec.js');  
 
 
-// describe('example', () => {
-  
-//   it('debería ser una función', () => {
-//     assert.equal(typeof example, 'function');
-//   });
-
-//   it('debería retornar "example"', () => {
-//     assert.equal(example(), 'example');
-//   });
-// })
-
 
 describe('filterData.firstFilterCandy', ()=>{
   const sample = [
@@ -136,32 +125,6 @@ describe('order.sortData', () => {
 })
  })
 
- describe('filterData.thirdFilterType', ()=>{
-  const sample = [
-    {
-    "name": "Ekans",
-    "type": [ "Poison"]
-    },
-    {
-      "name": "Squirtle",
-      "type":  ["Water"]
-  },
-  
-
-  ]
-describe('filterData.thirdFilterType', () => {
-  
-  it('debería ser una función', () => { 
-    assert.equal(typeof window.filterData.thirdFilterType, 'function');
-  });
-
-
-  it('debería retornar objeto"Squirtle" para filtro Water" ', () => {
-  assert.deepEqual(window.filterData.thirdFilterType(sample ,'Water' ),[{"name": "Squirtle","type": ["Water"]}]);
-  });
-  
-})
- })
  
  
 describe('calcuData.computeStatswWeight', ()=>{
@@ -187,7 +150,7 @@ describe('calcuData.computeStatswWeight', () => {
   });
 
 
-  it('debería retornar 15,6333333 ', () => {
+  it('debería retornar 15.633333333333333 ', () => {
   assert.deepEqual(window.calcuData.computeStatswWeight(sample), 15.633333333333333);
   });
   
@@ -217,7 +180,7 @@ describe('calcuData.computeStats', () => {
   });
 
 
-  it('debería retornar 0.89666667 ', () => {
+  it('debería retornar 0.89666666666666667 ', () => {
   assert.deepEqual(window.calcuData.computeStats(sample), 0.8966666666666666);
   });
   
