@@ -72,6 +72,7 @@ return ordenarPokemon
     },
   
   
+
     computeStatswWeight:(data) => {
  const averageWeight = data.map(element => {
    return parseFloat(element.weight)})
@@ -80,6 +81,7 @@ return ordenarPokemon
      add += averageWeight [i];
    }
    let average =parseFloat(add/averageWeight.length) 
+
  
    return average;
    
