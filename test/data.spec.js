@@ -135,3 +135,91 @@ describe('order.sortData', () => {
   
 })
  })
+
+ describe('filterData.thirdFilterType', ()=>{
+  const sample = [
+    {
+    "name": "Ekans",
+    "type": [ "Poison"]
+    },
+    {
+      "name": "Squirtle",
+      "type":  ["Water"]
+  },
+  
+
+  ]
+describe('filterData.thirdFilterType', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.filterData.thirdFilterType, 'function');
+  });
+
+
+  it('debería retornar objeto"Squirtle" para filtro Water" ', () => {
+  assert.deepEqual(window.filterData.thirdFilterType(sample ,'Water' ),[{"name": "Squirtle","type": ["Water"]}]);
+  });
+  
+})
+ })
+ 
+ 
+describe('calcuData.computeStatswWeight', ()=>{
+  const sample = [
+    {
+    "name": "Bulbasaur",
+    "weight": "6.9 kg",
+    },
+    {
+    "name": "Pidgeotto",
+    "weight": "30.0 kg"
+  },
+  {
+    "name": "Magikarp",
+    "weight": "10.0 kg",
+  },
+
+  ]
+describe('calcuData.computeStatswWeight', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.calcuData.computeStatswWeight, 'function');
+  });
+
+
+  it('debería retornar 15,6333333 ', () => {
+  assert.deepEqual(window.calcuData.computeStatswWeight(sample), 15.633333333333333);
+  });
+  
+})
+ })
+
+ describe('calcuData.computeStats', ()=>{
+  const sample = [
+    {
+    "name": "Bulbasaur",
+    "height": "0.71 m",
+    },
+    {
+    "name": "Pidgeotto",
+    "height": "1.09 m",
+  },
+  {
+    "name": "Magikarp",
+    "height": "0.89 m",
+  },
+
+  ]
+describe('calcuData.computeStats', () => {
+  
+  it('debería ser una función', () => { 
+    assert.equal(typeof window.calcuData.computeStats, 'function');
+  });
+
+
+  it('debería retornar 0.89666667 ', () => {
+  assert.deepEqual(window.calcuData.computeStats(sample), 0.8966666666666666);
+  });
+  
+})
+ })

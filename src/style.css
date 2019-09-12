@@ -251,8 +251,6 @@ header{
 }
 
 
-
-
 /*Responsive para telefonos grandes y tablets*/
 
 @media screen and (min-width:500px) and (max-width:1024px){
@@ -341,9 +339,6 @@ header{
         width: 135px;
     }
 }
-
-
-
 
 
 /*Responsive para telefonos*/
@@ -450,4 +445,7 @@ footer{
     align-self: end;
     display: flex;
 }
+
+
+    
 
