@@ -40,6 +40,11 @@ nav a{
     text-decoration: none;
 }
 
+nav ul{
+    justify-content: center;
+    padding: 0;
+}
+
 nav li{
     background-color: none;
     border: none;
@@ -204,13 +209,18 @@ header{
     text-align: center;
 }
 
-#pokeName, #pokedex{
+#pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
     color: blue;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
     margin-top: 5px;
     width: 170px;
+}
+
+#pokeHeigth, #pokeWeigth{
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .calculo-buttons{
@@ -244,16 +254,11 @@ header{
     text-align: center;
 }
 
-.buttoncard{
-    background-color: blue;
-    color: white;
-    margin-top: 5px;
-}
-
+   
 
 /*Responsive para telefonos grandes y tablets*/
 
-@media screen and (min-width:500px) and (max-width:1024px){
+@media screen and (min-width:680px) and (max-width:1024px){
 
     .logopk{
         height: 50px;
@@ -333,17 +338,21 @@ header{
         justify-content: center;
     }
     
-    #pokeName, #pokedex{
+    #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
         font-size: 12px;
         margin-top: 5px;
         width: 135px;
+    }
+    #pokeHeigth, #pokeWeigth{
+        font-size: 11px;
+        font-weight: 400;
     }
 }
 
 
 /*Responsive para telefonos*/
 
-@media screen and (max-width:500px){
+@media screen and (max-width:680px){
     
     .logopk{
         height: 40px;
@@ -421,18 +430,15 @@ header{
         width: 100px;
     }
 
-    #pokeName, #pokedex{
+    #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
         font-size: 11px;
-        margin-top: 5px;
+        margin-top: 2px;
         width: 60px;
     }
 
-    .buttoncard{
-        background-color: blue;
-        color: white;
+    #pokeHeigth, #pokeWeigth{
         font-size: 10px;
-        margin-top: 5px;
-        width: 90px;
+        font-weight: 400;
     }
 }
 
@@ -444,8 +450,6 @@ header{
 footer{
     align-self: end;
     display: flex;
+    position: absolute;
 }
-
-
-    
-
+} 

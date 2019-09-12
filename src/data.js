@@ -89,9 +89,3 @@ return ordenarPokemon
     }
   }
  
-
- 
- 
-
-
-

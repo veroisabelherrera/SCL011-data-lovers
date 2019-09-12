@@ -27,6 +27,7 @@ document.getElementById("listado-screen").style.display="none";
 document.getElementById("estadisticas-screen").style.display="none";
 });
 
+
 const selects1 = document.getElementById("listSelect");
 const containerFilters = document.getElementById("button-menu2");
 containerFilters.addEventListener("click", ()=>{
@@ -54,7 +55,8 @@ container.innerHTML += `<div>
                                 <div class="cartPk1">
                                   <p id="pokeName"> ${element.name}</p>
                                   <p id="pokedex"> # ${element.id}</p>
-                                  <button class="buttoncard">ver ficha</button>
+                                  <p id="pokeHeigth"> ${element.height}</p>
+                                  <p id="pokeWeigth"> ${element.weight}</p>
                                 </div>
 
                           </div>
@@ -80,7 +82,8 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <button class="buttoncard">ver ficha</button>
+                                      <p id="pokeHeigth"> ${element.height}</p>
+                                      <p id="pokeWeigth"> ${element.weight}</p>
                                      </div>
                                       </div>
                                       </div>
@@ -104,7 +107,8 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <button class="buttoncard">ver ficha</button>
+                                      <p id="pokeHeigth"> ${element.height}</p>
+                                      <p id="pokeWeigth"> ${element.weight}</p>
                                      </div>
                                       </div>
                                       </div>
@@ -127,7 +131,8 @@ container.innerHTML += `<div>
                                     <div class="cartPk1">
                                         <p id="pokeName"> ${element.name}</p>
                                         <p id="pokedex"> # ${element.id}</p>
-                                        <button class="buttoncard">ver ficha</button>
+                                        <p id="pokeHeigth"> ${element.height}</p>
+                                        <p id="pokeWeigth"> ${element.weight}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -146,14 +151,12 @@ const buttonHeight= document.getElementById("height")
 const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
-containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (resultHeight).toFixed(2).bold();
+containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (resultHeight).toFixed(2).bold() + "m";
 });
 
 //Calculo 2
 const buttonWeight= document.getElementById("Weight")
 buttonWeight.addEventListener("click", () => { 
 const resultWeight = window.calcuData.computeStatswWeight(data) 
-containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  resultWeight +"kg";
+containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  (resultWeight).toFixed(2).bold() + "kg";
 });
-
-
