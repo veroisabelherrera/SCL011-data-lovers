@@ -10,7 +10,7 @@ Basado en las estadísticas de este juego se crea sitio web “POKEMANIA” que 
 
 Dentro de la una aplicación con exceso  información  los usuarios no tienen acceso de forma rápida a datos que son de gran relevancia en el juego como son los tipos de pokémon existentes, que pokémon salen en los distintos huevos, con cuantos caramelos evolucionan, la talla y peso de estos, sus debilidades entre otros por lo que su experiencia con el juego no es completamente satisfactoria.
 
-Por lo que basado en esto requerimientos se crea el sitio “POKEMANÍA” el lugar donde  los usuarios que ya tengan alguna referencia o relación con la aplicación pueden encontrar de forma sencilla y rápida datos que serán de utilidad para el jugador, además podrán encontrar información extra para complementar su experiencia tales como noticias relevantes, actualizaciones y datos interesantes que ayudaran al jugador a expandir su relación con la aplicación.
+Basado en esto requerimientos se crea el sitio “POKEMANÍA” el lugar donde  los usuarios que ya tengan alguna referencia o relación con la aplicación pueden encontrar de forma sencilla y rápida datos que serán de utilidad para el jugador, además podrán encontrar información extra para complementar su experiencia tales como noticias relevantes, actualizaciones y datos interesantes que ayudaran al jugador a expandir su relación con la aplicación.
 
 ## **Público objetivo**
 
@@ -22,13 +22,15 @@ Estos conocen o tienen alguna referencia de los Pokémons, puesto que conocen la
 Para conocer los requerimientos del usuario se planifica y elabora una entrevista, la cual contenía preguntas abiertas y cerradas.
 
 Esta se realizan a 5 jugadores de la aplicación, en lo cual se puedo concluir que la información  que les interesa es:
- -Los pokemon que pueden salir en los huevo de  2 km ,5km, 10km puesto que     quieren  conocer  si caminar dicha distancia les traerá un pokemon que les interese o ayude.
+
+ -Los pokemon que pueden salir en los huevo de  2 km ,5km, 10km puesto que quieren  conocer  si caminar dicha distancia les traerá un pokemon que les interese o ayude.
 
  -El contador de caramelos ya que estos datos les servirá para conocer con  cuantos caramelos se evoluciona a su pokemon a la siguiente versión, porque en la mayor parte de las ocasiones capturan al Pokémon en su primera etapa.
+
  -Los tipos de pokemon que existen
 
  -Talla y peso: datos importantes al momento de pelear en un gimnasio y para tener información adicional
- -Debilidades que posee los Pokémon
+
 
  -Listado pokemon en orden pokedex puesto que lo relacionan a la serie
 
@@ -38,17 +40,17 @@ Respecto a  información general  les interesa tener acceso a noticas, actualiza
 
 Link entrevistas:
 
-[Entrevistado1](https://www.dropbox.com/s/hsrunu83u2epk7h/erick%20entrevista.m4a?dl=0)
+[Entrevistado 1](https://www.dropbox.com/s/hsrunu83u2epk7h/erick%20entrevista.m4a?dl=0)
 
-[Entrevistado2](https://www.dropbox.com/s/x7ocshfhgex0wgl/teddy%20entrevista%201.m4a?dl=0)
+[Entrevistado 2](https://www.dropbox.com/s/x7ocshfhgex0wgl/teddy%20entrevista%201.m4a?dl=0)
 
-[Entrevistado3](https://www.dropbox.com/s/535fy8kpxvho3fe/emilio%20entrevista.m4a?dl=0)
+[Entrevistado 3](https://www.dropbox.com/s/535fy8kpxvho3fe/emilio%20entrevista.m4a?dl=0)
 
-[Entrevistado4 parte1](https://www.dropbox.com/s/q2p19b253k5a705/jorge%20entrevista.m4a) 
+[Entrevistado 4 parte 1](https://www.dropbox.com/s/q2p19b253k5a705/jorge%20entrevista.m4a) 
 
-[Entrevistado 4 parte2](https://www.dropbox.com/s/yfwn8b5kasc94pp/jorge%20entrevista%202.m4a?dl=0)
+[Entrevistado 4 parte 2](https://www.dropbox.com/s/yfwn8b5kasc94pp/jorge%20entrevista%202.m4a?dl=0)
 
-[Entrevistado5](https://www.dropbox.com/s/glybrgbkglplply/Ronald%20entrevista.m4a?dl=0)
+[Entrevistado 5](https://www.dropbox.com/s/glybrgbkglplply/Ronald%20entrevista.m4a?dl=0)
 
 
 ## **Planificación de diseño** :pencil:
@@ -68,7 +70,6 @@ Nuevamente se realiza feedback donde se obtiene como resultado:
  -Quitar apartado de comparaciones, agregar estadísticas al menú
 
  -Quitar estadísticas del filtro 
-
 
  -Agregan opciones de cálculo agregado
 
@@ -102,15 +103,17 @@ Se realiza test de usabilidad a usuarios donde se concluye:
 
 ## **Historias de Usuario**
 
--Yo como usuario de Pokémon Go , me gustaría tener un filtrado para encontrar los datos que necesito de pokemon de forma más rápida y eficiente
+-Yo como usuario de Pokémon Go , me gustaría tener un filtrado (Eggs , Candy y types ) para encontrar los datos que necesito de pokemon de forma más rápida y eficiente
 
-Criterios de aceptación: tres filtros (Eggs , Candy y types ), select para cada filtro  , menú para ingresar a los select, cada pokemon salga en un tarjeta individual , diseño listo(tipografía , cajas ,colores)  , filtrado muestre los pokemon según lo indicado en cada select.
+Criterios de aceptación: tres filtros (Eggs , Candy y types ), select para cada filtro  , menú para ingresar a los select,cada pokemon salga en un tarjeta individual , diseño listo(tipografía , cajas ,colores)  , filtrado muestre los pokemon según lo indicado en cada select, test listos
 
 -Yo como usuario me gustaría tener la opción de ordenar los pokemon por orden pokedex para encontrarlos con mayor facilidad  y porque se relaciona con la serie.
 
-Criterios de aceptación: select con la opción de ordenar, pokemones ordenados de forma ascendente y descendente, cada pokémon en tarjeta individual con el mismo diseño de las otras tarjetas, pokémon salgan ordenados correctamente.
+Criterios de aceptación: select con la opción de ordenar, pokemones ordenados de forma ascendente y descendente, cada pokémon en tarjeta individual con el mismo diseño de las otras tarjetas, pokémon salgan ordenados correctamente., test listos,
 
 -Yo como usuario me gustaría tener   un cálculo agregado  para conocer el promedio de altura, peso y debilidad de los pokemon 
+
+Criterios de aceptación: apartado en menú para acceder a estadisticas , botón para acceder a los resultados , diseño  listo(tipografia , colores ,cajas) , resultado correcto , test listos.
 
 ## **¿Cómo acceder a la aplicación?**
 
@@ -120,9 +123,9 @@ Para ingresar a la página debe hacerlo a través del siguiente [Link](https://m
 
 -Tendrás un menú con tres opciones:
 
-   -Primero un  apartado de noticias
+    -Primero un  apartado de noticias
 
-   -En segundo lugar  un listado pokémons donde los podrás ordenar en orden pokédex (ascendente y descendente), filtrar según su tipo, caramelos y huevos de 2 , 5 y 10 km.
+    -En segundo lugar  un listado pokémons donde los podrás ordenar en orden pokédex (ascendente y descendente), filtrar según su tipo, caramelos y huevos de 2 , 5 y 10 km.
 
-   -Por ultimo estadísticas, donde conocer el promedio de estatura y peso de pokémons.
+    -Por ultimo estadísticas, donde conocer el promedio de estatura y peso de pokémons.
 
