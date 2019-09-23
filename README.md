@@ -123,7 +123,30 @@ Criterios de aceptación: apartado en menú para acceder a estadisticas , botón
 
 Se realizan test de usabilidad a distintos usuario para conocer si el sitio web creado cumple con sus requerimientos y si este es de fácil comprensión 
 
-Para acceder a los test debes hacerlo a través del siguiente [link]()
+Para acceder a los test debes hacerlo a través del siguiente [link](https://www.youtube.com/watch?v=t5hiD5DE98M&frags=pl%2Cwn)
+
+Por motivos de problemas técnicos, el audio del test con los usuarios no está disponible, por tanto dejamos por escrito el feedback recibido.
+
+Usuario 1: Filtrado de Pokemones según caracteristicas:
+- Ubicación rápida de menús
+- Intuitividad para encontrar los pokemones que busca
+- Fácil lectura, aunque en las tarjetitas de cada pokémon pide agregar las palabras "Altura" y "Peso" para identificar a que corresponde cada dato
+- Le gustaría que pudiera dar click a los pokemones y se abriera una tarjeta con información más detallada del mismo pokémon
+
+Usuario 2: Ordenar Pokemones según Orden Pokedex:
+- Fácil de ubicar pasos para ordenar
+- Ordena como necesita
+- Es un poco lento
+
+Usuario 3: Conocer datos extras de los Pokemones y noticias o actualizaciones:
+- Fácil ubicación de lo que busca en el menú
+- En la sección de noticias prefiere que la información esté dentro de la misma página y no tener que ir a otra página
+- Le gusta el diseño de toda la pagina
+- En cuanto a las estadisticas le falta un texto más específico de los datos que se están brindando
+- Quisiera poder tener más estadisticas
+
+Basado en los comentarios de los usuarios, se hicieron ajustes de textos más descriptivos en la sección de estadisticas y en las tarjetas de cada pokémon, se espera para futuro poder incoporar información más detallada de cada Pokémon y poder brindar más estadisticas según las caracteristicas comunes de los mismos.
+
 
 ## **¿Cómo acceder a la aplicación?**
 
