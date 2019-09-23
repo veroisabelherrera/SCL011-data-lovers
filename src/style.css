@@ -5,7 +5,10 @@
 body{
     background-color: white;
     margin: 0;
-   
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -464,4 +467,5 @@ footer{
     align-content: flex-end;
     align-items: flex-end
 
+      
 }
