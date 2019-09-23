@@ -31,8 +31,8 @@ body{
 nav {
     background-color: #FFCD02;
 }
+
 nav, header{
-   
     display: inline-flexbox;
     font-size: 14px;
     justify-content: center;
@@ -289,12 +289,11 @@ header{
     }
 
     nav, header{
-        font-size: 16px;
+        font-size: 15px;
         padding: 5px;
     }
 
     nav li{
-        font-size: 14px;
         padding: 5px;
     }
     
@@ -341,7 +340,7 @@ header{
     
     .select{
         align-content: center;
-        font-size: 11px;
+        font-size: 13px;
         height: 28px;
         letter-spacing: 0.3px;
         margin: 5px;
@@ -379,12 +378,9 @@ header{
     #calculoresult{
         text-align: center;
         margin-top: -110px;
-
+    }
     .newspk{
         font-size: 16px;
-        
-       
-
 
     }
 }
@@ -504,11 +500,10 @@ header{
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
+    }
 
     .newspk{
         font-size: 13px;
-        
-
     }
 }
 
