@@ -176,7 +176,7 @@ const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
 
-containerCalcu.innerHTML = '<p class="resultCalcu">'+" El promedio de peso de los 151 Pokémones de la Región de Kanto es " +  (resultHeight).toFixed(2).bold() + "kg"; '</p>'
+containerCalcu.innerHTML = '<p class="resultCalcu">'+" El promedio de altura de los 151 Pokémones de la Región de Kanto es " +  (resultHeight).toFixed(2).bold() + "mt"; '</p>'
 
 
 });
