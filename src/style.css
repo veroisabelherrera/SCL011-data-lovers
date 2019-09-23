@@ -261,7 +261,12 @@ header{
     text-align: center;
 }
 
-   
+.resultCalcu{
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    
+} 
 
 /*Responsive para telefonos grandes y tablets*/
 
@@ -353,6 +358,9 @@ header{
     #pokeHeigth, #pokeWeigth{
         font-size: 11px;
         font-weight: 400;
+    }
+    .resultCalcu{
+        font-size :15px; 
     }
 }
 
@@ -448,18 +456,26 @@ header{
         font-size: 10px;
         font-weight: 400;
     }
+    .resultCalcu{
+        font-size :13px; 
+    }
 }
 
 .icono i{
     font-size: 120%;
 }
 
-
-footer{
-    display: inline-flex;
+#footerid{
+    display: flex;
+    flex-direction: row;
     align-content: flex-end;
-    flex-direction: column;
-    align-self: flex-end
+    align-items: flex-end;
+    height: 50vh;
+}
+
+footer {
+    display: inline-flex;
+    align-content: flex-end
     
 }
 .icono , .names{

@@ -1,30 +1,11 @@
 // Nav Menu Principal
-// document.getElementById("button-menu1").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="block";
-//   document.getElementById("home").style.display="none";
-//   document.getElementById("listSelect").style.display="none";
-//   document.getElementById("estadisticas-screen").style.display="none";
-//   });
-  
-//   document.getElementById("button-menu2").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="none";
-//   document.getElementById("home").style.display="none";
-//   document.getElementById("listSelect").style.display="block";
-//   document.getElementById("estadisticas-screen").style.display="none";
-//   });
-  
-//   document.getElementById("button-menu3").addEventListener("click", () =>{
-//   document.getElementById("news-screen").style.display="none";
-//   document.getElementById("home").style.display="none";
-//   document.getElementById("listSelect").style.display="none";
-//   document.getElementById("estadisticas-screen").style.display="block";
-//   });
 
 document.getElementById("imagen-logo").addEventListener("click", () =>{
 //document.getElementById("news-screen").style.display="none";
 document.getElementById("home").style.display="block";
-document.getElementById("listado-screen").style.display="none";
+document.getElementById("listSelect").style.display="none";
 document.getElementById("estadisticas-screen").style.display="none";
+document.getElementById("root3").innerHTML="";
 });
 
 const container2 = document.getElementById("root3")
@@ -35,9 +16,9 @@ const container2 = document.getElementById("root3")
     document.getElementById("showPokemones").innerHTML="";
    container2.innerHTML=`<div id="news-screen" class="homescreen">
   <div class="box-article">
-      <h4 class="title5">Moviplaya</h4>
-          <a type="button" href="https://pokemon.fandom.com/es/wiki/Moviplaya"  target="_blank" class="readmorebutton">Leer más</a> 
-  
+      <h4 class="title5">Noticias</h4>
+          <a type="button" href="https://www.pokemon.com/el/noticias-pokemon/"  target="_blank" class="readmorebutton">Leer más</a> 
+      
   </div>
   <div class="box-article">
       <h4 class="title5">Campañas en IFEMA de Pokémon</h4>
@@ -189,7 +170,7 @@ const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
 
-containerCalcu.innerHTML = " El promedio de altura de los 151 Pokémones de la Región de Kanto es " +  (resultHeight).toFixed(2).bold() + "m";
+containerCalcu.innerHTML = '<p class="resultCalcu">' +" El promedio de altura de los 151 Pokémones de la Región de Kanto es " +  (resultHeight).toFixed(2).bold() + "m"; '</p>'
 
 
 });
@@ -199,7 +180,7 @@ const buttonWeight= document.getElementById("Weight")
 buttonWeight.addEventListener("click", () => { 
 const resultWeight = window.calcuData.computeStatswWeight(data) 
 
-containerCalcu.innerHTML = " El promedio de peso de los 151 Pokémones de la Región de Kanto es " +  (resultWeight).toFixed(2).bold() + "kg";
+containerCalcu.innerHTML = '<p class="resultCalcu">'+" El promedio de peso de los 151 Pokémones de la Región de Kanto es " +  (resultWeight).toFixed(2).bold() + "kg"; '</p>'
 });
 
 
