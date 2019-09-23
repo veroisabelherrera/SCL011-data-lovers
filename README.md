@@ -124,9 +124,9 @@ Criterios de aceptación: apartado en menú para acceder a estadisticas , botón
 Criterios de aceptación: primer apartado en menú para acceder a “actualidad, tres textos de noticas, tres botones que lleven a enlaces correspondientes, diseño listo(tipografía , cajas ,colores) , responsive. 
 
 
-## **Test de Usabilidad**
+## **Test de Usabilidad** :clipboard:
 
-Se realizan test de usabilidad a distintos usuario para conocer si el sitio web creado cumple con sus requerimientos y si este es de fácil comprensión 
+Se realizan test de usabilidad a distintos usuario para conocer si el sitio web creado cumple con sus requerimientos y si este es de fácil comprensión .
 
 Para acceder a los test debes hacerlo a través del siguiente [link](https://www.youtube.com/watch?v=t5hiD5DE98M&frags=pl%2Cwn)
 
@@ -154,7 +154,7 @@ Basado en los comentarios de los usuarios, se hicieron ajustes de textos más de
 
 Además con el tiempo remoto otorgado se realizan mejoras en temas de diseño tales como tipografía, y cambio de color encabezado y tamaño de logos.
 
-## **¿Cómo acceder a la aplicación?**
+## **¿Cómo acceder a la aplicación?** :iphone: :computer:
 
 Para ingresar a la página debe hacerlo a través del siguiente [Link](https://martcamila1.github.io/SCL011-data-lovers/src/index.html)
 

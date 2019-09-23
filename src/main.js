@@ -25,10 +25,10 @@ const container2 = document.getElementById("root3")
   <div class="box-article">
       <h4 class="title5">Campañas en IFEMA de Pokémon</h4>
          <a type="button" href="https://pokemon.fandom.com/es/wiki/Evento_Pok%C3%A9mon" target="_blank"  class="readmorebutton">Leer más</a> 
-         <h2 class="newspk"> Sabias que los eventos Pokémon son ferias que se celebran periódicamente en las que se reparten Pokémon exclusivos o Pokémon legendarios que no se pueden conseguir en el juego.
+         <h2 class="newspk"> Sabias que los eventos Pokémon son ferias que se celebran periódicamente en las que se reparten <br> Pokémon exclusivos o Pokémon legendarios que no se pueden conseguir en el juego.
          <br>
          <br>
-         Para descubrir eso y mucho haz click en “Leer más”</h2>   
+         Para descubrir eso y mucho más haz click en “Leer más”</h2>   
       </div>
   <div class="box-article">
       <h4 class="title5">Actualizaciones</h4>
