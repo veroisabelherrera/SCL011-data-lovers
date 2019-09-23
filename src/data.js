@@ -1,6 +1,4 @@
 
-
-
   //para filtrar por candy
   
   window.filterData={
@@ -34,7 +32,7 @@
  
     
   window.order={
-  sortData:(data ,  sortOrder) =>{
+  sortData:(data , sortOrder) =>{
 
  const ordenarPokemon = data.sort((pk1, pk2 ) => {
   
@@ -45,16 +43,13 @@ else  {
   return (pk1.id > pk2.id) ? -1 : 1
 }
 })
-//console.log(sortby);
+
 
 return ordenarPokemon
 }}; 
-  //console.log(ordenarPokemon);
+  
   
    //funciona para calculos
-
-  
- 
 
    window.calcuData={
     computeStats:(data) => {
