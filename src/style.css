@@ -195,7 +195,7 @@ header{
 }
 
 .cartPk1{
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Muli', sans-serif;
     background-color: rgba(0%, 0%, 100%, .4);
     display: flex;
     flex-direction: column;
@@ -215,7 +215,7 @@ header{
 }
 
 #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Muli', sans-serif;
     color: blue;
     font-size: 16px;
     font-weight: bold;
@@ -259,7 +259,7 @@ header{
 
 .resultCalcu{
     font-size: 20px;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Muli', sans-serif;
 } 
 .newspk{
     font-size: 18px;
@@ -275,6 +275,7 @@ header{
     margin-left: 220px;
     margin-right: 50px;
     justify-content: center;
+    font-family: 'Muli', sans-serif;
 }
 
 
@@ -379,7 +380,7 @@ header{
     #calculoresult{
         text-align: center;
         margin-top: -110px;
-
+    }
     .newspk{
         font-size: 16px;
         
@@ -504,7 +505,7 @@ header{
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
-
+    }
     .newspk{
         font-size: 13px;
         
@@ -521,7 +522,7 @@ header{
     flex-direction: row;
     align-content: flex-end;
     align-items: flex-end;
-    height: 50vh;
+    height: 60vh;
 }
 
 footer {
