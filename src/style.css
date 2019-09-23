@@ -1,6 +1,6 @@
-*{
+/*{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+}*/
 
 body{
     background-color: white;
@@ -12,7 +12,7 @@ body{
 }
 
 
-/*Responsive para computadoras*/
+/*Responsive  general para computadoras*/
 
 .homescreen{
     background-image: url(../Imgs_DataLovers/fondohome.jpg);
@@ -22,16 +22,19 @@ body{
 
 
 .logopk{
-    height: 60px;
+    height: 90px;
     margin-top: 10px;
+
 }
 
 .logopk:hover{
     cursor: pointer;
 }
-
-nav, header{
+nav {
     background-color: #FFCD02;
+}
+nav, header{
+   
     display: inline-flexbox;
     font-size: 14px;
     justify-content: center;
@@ -40,6 +43,7 @@ nav, header{
 }
 
 nav a{ 
+    font-family: 'Source Serif Pro', serif;
     color: blue;
     text-decoration: none;
 }
@@ -63,31 +67,23 @@ nav li:hover{
     background-color:rgba(0%, 0%, 100%, .3);
 }
 
-nav li:active{
-    background-color: rgba(0%, 0%, 100%, .4);
-    border-bottom: none;
-    border-color: blue;
-    border-left-style: solid;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-top: none;
-    color:blue;
-    font-weight: bold;
-}
 
 h2{
+    font-family: 'Source Serif Pro', serif;
     font-size: 32px;
     font-weight: bold;
     padding-top: 20px;
 }
 
 h3{
+    font-family:  'Muli', sans-serif;
     font-size: 28px; 
     margin: 40px;
     text-align: center;
 }
 
 h4{
+    font-family:  'Muli', sans-serif;
     font-size: 21px;
     font-weight: 400;
     margin-top: 60px;
@@ -114,6 +110,8 @@ h4{
 }
 
 .readmorebutton{
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
     background-color: #ffffffb4;
     border: solid;
     border-color: rgba(0%, 0%, 100%, .5);
@@ -144,6 +142,7 @@ p{
 }
 
 .select-list{
+   
     color: #525252;
     font-size: 12px;
     font-weight: bold;
@@ -152,6 +151,7 @@ p{
 }
 
 .select{
+    font-family: 'Source Serif Pro', serif;
     background-color: rgba(255, 204, 2, 0.9);
     border: solid;
     border-color: #525252;
@@ -166,7 +166,7 @@ p{
     width: 140px;
 }
 
-#listSelect, #news-screen, #estadisticas-screen{
+#listSelect, .news-screen, #estadisticas-screen{
     display: none;
 }
 
@@ -195,6 +195,7 @@ header{
 }
 
 .cartPk1{
+    font-family: 'Noto Sans SC', sans-serif;
     background-color: rgba(0%, 0%, 100%, .4);
     display: flex;
     flex-direction: column;
@@ -214,6 +215,7 @@ header{
 }
 
 #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
+    font-family: 'Noto Sans SC', sans-serif;
     color: blue;
     font-size: 16px;
     font-weight: bold;
@@ -233,6 +235,7 @@ header{
 }
 
 .calcubuttons, .buttoncard{
+    font-family: 'Source Serif Pro', serif;
     background-color: #DBDBDB;
     border: none;
     border-radius: 8px;
@@ -265,7 +268,7 @@ header{
 @media screen and (min-width:680px) and (max-width:1024px){
 
     .logopk{
-        height: 50px;
+        height: 70px;
         margin-top: 10px;
     }
 
@@ -275,7 +278,7 @@ header{
     }
 
     nav li{
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px;
     }
     
@@ -359,7 +362,7 @@ header{
 @media screen and (max-width:680px){
     
     .logopk{
-        height: 40px;
+        height: 50px;
         margin-top: 10px;
     }
 
@@ -383,6 +386,7 @@ header{
     }
 
     h4{
+        font-family: 'Noto Sans SC', sans-serif;
         font-size: 18px;
         margin-bottom: 10px;
         text-align: justify;
@@ -452,8 +456,16 @@ header{
 
 
 footer{
-    align-self: end;
-    display: flex;
-    position: absolute;
-    height: 100vh;
+    display: inline-flex;
+    align-content: flex-end;
+    flex-direction: column;
+    align-self: flex-end
+    
+}
+.icono , .names{
+    display: inline-flex;
+    align-content: flex-end;
+    align-items: flex-end
+
+      
 }
