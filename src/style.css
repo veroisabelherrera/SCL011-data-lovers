@@ -463,19 +463,19 @@ header{
     }
     
     .cartPk1{
-        height: 60px;
+        height: 57px;
         justify-content: center;
         width: 100px;
     }
 
     #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
-        font-size: 11px;
+        font-size: 9px;
         margin-top: 2px;
         width: 60px;
     }
 
     #pokeHeigth, #pokeWeigth{
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 400;
     }
 
@@ -502,9 +502,6 @@ header{
         margin-left: 10px;
         margin-right: 10px;
     }
-
-
-
 
     .newspk{
         font-size: 13px;
