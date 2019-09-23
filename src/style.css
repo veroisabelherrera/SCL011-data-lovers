@@ -102,9 +102,11 @@ h4{
 
 .title5{
     color: blue;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     padding-top: 20px;
+    margin: 0px;
+    padding-bottom: 10px;
 }
 
 .readmorebutton{
@@ -259,6 +261,13 @@ header{
     font-size: 20px;
     font-family: 'Noto Sans SC', sans-serif;
 } 
+.newspk{
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    color: black;
+    padding:40px 10px 40px 20px;
+    font-weight: 600; 
+}
 
 #calculoresult{
     text-align: center;
@@ -267,6 +276,7 @@ header{
     margin-right: 50px;
     justify-content: center;
 }
+
 
 
 /*Responsive para telefonos grandes y tablets*/
@@ -279,7 +289,7 @@ header{
     }
 
     nav, header{
-        font-size: 13px;
+        font-size: 16px;
         padding: 5px;
     }
 
@@ -289,7 +299,7 @@ header{
     }
     
     h2{
-        font-size: 28px;
+        font-size: 30px;
     }
 
     h3{
@@ -365,9 +375,17 @@ header{
         font-size :15px; 
     }
 
+
     #calculoresult{
         text-align: center;
         margin-top: -110px;
+
+    .newspk{
+        font-size: 16px;
+        
+       
+
+
     }
 }
 
@@ -480,11 +498,17 @@ header{
         font-size :13px; 
     }
 
+
     #calculoresult{
         text-align: center;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
+
+    .newspk{
+        font-size: 13px;
+        
+
     }
 }
 

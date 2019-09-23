@@ -18,16 +18,22 @@ const container2 = document.getElementById("root3")
   <div class="box-article">
       <h4 class="title5">Noticias</h4>
           <a type="button" href="https://www.pokemon.com/el/noticias-pokemon/"  target="_blank" class="readmorebutton">Leer más</a> 
-      
+      <h2 class="newspk">Disfruta de todas las noticas de tus pokémon en un solo lugar <br>
+      <br>
+       Solo debes hacer click en “Leer más”</h2>
   </div>
   <div class="box-article">
       <h4 class="title5">Campañas en IFEMA de Pokémon</h4>
-      <a type="button" href="https://pokemon.fandom.com/es/wiki/Evento_Pok%C3%A9mon" target="_blank"  class="readmorebutton">Leer más</a> 
-         
+         <a type="button" href="https://pokemon.fandom.com/es/wiki/Evento_Pok%C3%A9mon" target="_blank"  class="readmorebutton">Leer más</a> 
+         <h2 class="newspk"> Sabias que los eventos Pokémon son ferias que se celebran periódicamente en las que se reparten Pokémon exclusivos o Pokémon legendarios que no se pueden conseguir en el juego.
+         <br>
+         <br>
+         Para descubrir eso y mucho haz click en “Leer más”</h2>   
       </div>
   <div class="box-article">
       <h4 class="title5">Actualizaciones</h4>
-      <a type="button"  href="https://pokemongolive.com/es/post/" target="_blank" class="readmorebutton">Leer más</a> 
+        <a type="button"  href="https://pokemongolive.com/es/post/" target="_blank" class="readmorebutton">Leer más</a>
+     <h2 class="newspk">Revisa día a día las nuevas actualizaciones y eventos de Pokémon Go</h2>
   </div>
 
 </div>`
