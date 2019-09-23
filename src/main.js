@@ -1,39 +1,76 @@
 // Nav Menu Principal
-document.getElementById("button-menu1").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="block";
-  document.getElementById("home").style.display="none";
-  document.getElementById("listSelect").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="none";
-  });
+// document.getElementById("button-menu1").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="block";
+//   document.getElementById("home").style.display="none";
+//   document.getElementById("listSelect").style.display="none";
+//   document.getElementById("estadisticas-screen").style.display="none";
+//   });
   
-  document.getElementById("button-menu2").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="none";
-  document.getElementById("listSelect").style.display="block";
-  document.getElementById("estadisticas-screen").style.display="none";
-  });
+//   document.getElementById("button-menu2").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="none";
+//   document.getElementById("home").style.display="none";
+//   document.getElementById("listSelect").style.display="block";
+//   document.getElementById("estadisticas-screen").style.display="none";
+//   });
   
-  document.getElementById("button-menu3").addEventListener("click", () =>{
-  document.getElementById("news-screen").style.display="none";
-  document.getElementById("home").style.display="none";
-  document.getElementById("listSelect").style.display="none";
-  document.getElementById("estadisticas-screen").style.display="block";
-  });
+//   document.getElementById("button-menu3").addEventListener("click", () =>{
+//   document.getElementById("news-screen").style.display="none";
+//   document.getElementById("home").style.display="none";
+//   document.getElementById("listSelect").style.display="none";
+//   document.getElementById("estadisticas-screen").style.display="block";
+//   });
 
 document.getElementById("imagen-logo").addEventListener("click", () =>{
-document.getElementById("news-screen").style.display="none";
+//document.getElementById("news-screen").style.display="none";
 document.getElementById("home").style.display="block";
 document.getElementById("listado-screen").style.display="none";
 document.getElementById("estadisticas-screen").style.display="none";
 });
 
+const container2 = document.getElementById("root3")
+  document.getElementById("button-menu1").addEventListener("click", () =>{
+    document.getElementById("home").style.display="none";
+    document.getElementById("listSelect").style.display="none";
+    document.getElementById("estadisticas-screen").style.display="none";
+    document.getElementById("showPokemones").innerHTML="";
+   container2.innerHTML=`<div id="news-screen" class="homescreen">
+  <div class="box-article">
+      <h4 class="title5">Moviplaya</h4>
+          <a type="button" href="https://pokemon.fandom.com/es/wiki/Moviplaya"  target="_blank" class="readmorebutton">Leer más</a> 
+  
+  </div>
+  <div class="box-article">
+      <h4 class="title5">Campañas en IFEMA de Pokémon</h4>
+      <a type="button" href="https://pokemon.fandom.com/es/wiki/Evento_Pok%C3%A9mon" target="_blank"  class="readmorebutton">Leer más</a> 
+         
+      </div>
+  <div class="box-article">
+      <h4 class="title5">Actualizaciones</h4>
+      <a type="button"  href="https://pokemongolive.com/es/post/" target="_blank" class="readmorebutton">Leer más</a> 
+  </div>
+
+</div>`
+
+})
 
 const selects1 = document.getElementById("listSelect");
 const containerFilters = document.getElementById("button-menu2");
 containerFilters.addEventListener("click", ()=>{
     selects1.style.display = "block";
+    document.getElementById("estadisticas-screen").style.display="none";
+    document.getElementById("home").style.display="none";
+    document.getElementById("root3").innerHTML="";
 });
 
+const statistics = document.getElementById("estadisticas-screen");
+const containerStatistics = document.getElementById("button-menu3");
+containerStatistics.addEventListener("click", ()=>{
+    statistics.style.display = "block";
+    document.getElementById("listSelect").style.display="none";
+    document.getElementById("home").style.display="none";
+    document.getElementById("showPokemones").innerHTML="";
+    document.getElementById("root3").innerHTML="";
+});
 
 const data = window.POKEMON.pokemon;
 
@@ -47,6 +84,7 @@ const container = document.getElementById("showPokemones")
 
 
 //                  // imprimir resultados
+document.getElementById("root3").innerHTML="";
 document.getElementById("showPokemones").innerHTML="";
 prindCandy.forEach(element => {
 container.innerHTML += `<div>
@@ -58,7 +96,6 @@ container.innerHTML += `<div>
                                   <p id="pokeHeigth"> ${element.height}</p>
                                   <p id="pokeWeigth"> ${element.weight}</p>
                                 </div>
-
                           </div>
                         </div>`
     });

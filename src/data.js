@@ -77,8 +77,8 @@ return ordenarPokemon
  const averageWeight = data.map(element => {
    return parseFloat(element.weight)})
   let add = 0;
- for(let i = 0; i < averageWeight .length; i++){
-     add += averageWeight [i];
+ for(let i = 0; i < averageWeight.length; i++){
+     add += averageWeight[i];
    }
    let average =parseFloat(add/averageWeight.length) 
 

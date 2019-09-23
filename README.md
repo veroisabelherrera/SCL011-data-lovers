@@ -91,6 +91,10 @@ Al hacer test de usabilidad a los usuarios estos señalan elementos que se deben
 
 Con la información entregada por los usuarios se procede a realizar prototipo en [“figma”](https://www.figma.com/file/RiN35dlg1adxz792zM9JE0/Data-Lovers?node-id=0%3A1)
 
+![imagen](https://i.ibb.co/HqM6XYM/figmapk1.png)
+![imagen](https://i.ibb.co/8bkPBHM/figmapk2.png)
+
+
 Se realiza test de usabilidad a usuarios donde se concluye:
 
 -Agregar los Pokémons en cartas con algún tipo de diseño para que no vea tan “apagada” y desordenada la página
@@ -109,11 +113,17 @@ Criterios de aceptación: tres filtros (Eggs , Candy y types ), select para cada
 
 -Yo como usuario me gustaría tener la opción de ordenar los pokemon por orden pokedex para encontrarlos con mayor facilidad  y porque se relaciona con la serie.
 
-Criterios de aceptación: select con la opción de ordenar, pokemones ordenados de forma ascendente y descendente, cada pokémon en tarjeta individual con el mismo diseño de las otras tarjetas, pokémon salgan ordenados correctamente., test listos,
+Criterios de aceptación: select con la opción de ordenar, pokemones ordenados de forma ascendente y descendente, cada pokémon en tarjeta individual con el mismo diseño de las otras tarjetas, pokémon salgan ordenados correctamente., test listos.
 
--Yo como usuario me gustaría tener   un cálculo agregado  para conocer el promedio de altura, peso y debilidad de los pokemon 
+-Yo como usuario me gustaría tener   un cálculo agregado  para conocer el promedio de altura y peso de los pokémons.
 
 Criterios de aceptación: apartado en menú para acceder a estadisticas , botón para acceder a los resultados , diseño  listo(tipografia , colores ,cajas) , resultado correcto , test listos.
+
+## **Test de Usabilidad**
+
+Se realizan test de usabilidad a distintos usuario para conocer si el sitio web creado cumple con sus requerimientos y si este es de fácil comprensión 
+
+Para acceder a los test debes hacerlo a través del siguiente [link]()
 
 ## **¿Cómo acceder a la aplicación?**
 
