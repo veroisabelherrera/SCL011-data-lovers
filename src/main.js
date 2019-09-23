@@ -55,8 +55,8 @@ container.innerHTML += `<div>
                                 <div class="cartPk1">
                                   <p id="pokeName"> ${element.name}</p>
                                   <p id="pokedex"> # ${element.id}</p>
-                                  <p id="pokeHeigth"> ${element.height}</p>
-                                  <p id="pokeWeigth"> ${element.weight}</p>
+                                  <p id="pokeHeigth"> Altura: ${element.height}</p>
+                                  <p id="pokeWeigth"> Peso: ${element.weight}</p>
                                 </div>
 
                           </div>
@@ -82,8 +82,8 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <p id="pokeHeigth"> ${element.height}</p>
-                                      <p id="pokeWeigth"> ${element.weight}</p>
+                                      <p id="pokeHeigth"> Altura: ${element.height}</p>
+                                      <p id="pokeWeigth"> Peso: ${element.weight}</p>
                                      </div>
                                       </div>
                                       </div>
@@ -107,8 +107,8 @@ container.innerHTML += `<div>
                                       <div class="cartPk1">
                                       <p id="pokeName"> ${element.name}</p>
                                       <p id="pokedex"> # ${element.id}</p>
-                                      <p id="pokeHeigth"> ${element.height}</p>
-                                      <p id="pokeWeigth"> ${element.weight}</p>
+                                      <p id="pokeHeigth"> Altura: ${element.height}</p>
+                                      <p id="pokeWeigth"> Peso: ${element.weight}</p>
                                      </div>
                                       </div>
                                       </div>
@@ -131,8 +131,8 @@ container.innerHTML += `<div>
                                     <div class="cartPk1">
                                         <p id="pokeName"> ${element.name}</p>
                                         <p id="pokedex"> # ${element.id}</p>
-                                        <p id="pokeHeigth"> ${element.height}</p>
-                                        <p id="pokeWeigth"> ${element.weight}</p>
+                                        <p id="pokeHeigth"> Altura: ${element.height}</p>
+                                        <p id="pokeWeigth"> Peso: ${element.weight}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -152,7 +152,7 @@ const containerCalcu = document.getElementById("calculoresult");
 buttonHeight.addEventListener("click", () => { 
 const resultHeight = window.calcuData.computeStats(data) 
 
-containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (resultHeight).toFixed(2).bold() + "m";
+containerCalcu.innerHTML = " El promedio de altura de los 151 Pokémones de la Región de Kanto es " +  (resultHeight).toFixed(2).bold() + "m";
 
 
 });
@@ -161,5 +161,5 @@ containerCalcu.innerHTML = " El promedio de altura de tus Pokémones es " +  (re
 const buttonWeight= document.getElementById("Weight")
 buttonWeight.addEventListener("click", () => { 
 const resultWeight = window.calcuData.computeStatswWeight(data) 
-containerCalcu.innerHTML = " El promedio de altura de tus Pokémons es " +  (resultWeight).toFixed(2).bold() + "kg";
+containerCalcu.innerHTML = " El promedio de peso de los 151 Pokémones de la Región de Kanto es " +  (resultWeight).toFixed(2).bold() + "kg";
 });
