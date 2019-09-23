@@ -8,7 +8,6 @@ body{
     padding: 0;
     position: absolute;
     width: 100%;
-    height: 100vh;
 }
 
 
@@ -19,7 +18,6 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 
 .logopk{
     height: 90px;
@@ -257,17 +255,18 @@ header{
     background-color: #FFCD02;
 }
 
-.contListCalc{
-    text-align: center;
-}
-
-
 .resultCalcu{
     font-size: 20px;
-    align-items: center;
     font-family: 'Noto Sans SC', sans-serif;
-    
 } 
+
+#calculoresult{
+    text-align: center;
+    margin-top: -160px;
+    margin-left: 220px;
+    margin-right: 50px;
+    justify-content: center;
+}
 
 
 /*Responsive para telefonos grandes y tablets*/
@@ -361,8 +360,14 @@ header{
         font-size: 11px;
         font-weight: 400;
     }
+
     .resultCalcu{
         font-size :15px; 
+    }
+
+    #calculoresult{
+        text-align: center;
+        margin-top: -110px;
     }
 }
 
@@ -458,8 +463,28 @@ header{
         font-size: 10px;
         font-weight: 400;
     }
+
+    .calculo-buttons{
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .calcubuttons{
+       align-content: center;
+       margin: 0px;
+       width: 50%;
+    }
+
     .resultCalcu{
         font-size :13px; 
+    }
+
+    #calculoresult{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
