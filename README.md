@@ -119,6 +119,11 @@ Criterios de aceptación: select con la opción de ordenar, pokemones ordenados 
 
 Criterios de aceptación: apartado en menú para acceder a estadisticas , botón para acceder a los resultados , diseño  listo(tipografia , colores ,cajas) , resultado correcto , test listos.
 
+-Yo como usuario me gustaría tener acceso a noticias y actualizaciones para estar más informado sobre el juego pokémon Go.
+
+Criterios de aceptación: primer apartado en menú para acceder a “actualidad, tres textos de noticas, tres botones que lleven a enlaces correspondientes, diseño listo(tipografía , cajas ,colores) , responsive. 
+
+
 ## **Test de Usabilidad**
 
 Se realizan test de usabilidad a distintos usuario para conocer si el sitio web creado cumple con sus requerimientos y si este es de fácil comprensión 
@@ -147,6 +152,7 @@ Usuario 3: Conocer datos extras de los Pokemones y noticias o actualizaciones:
 
 Basado en los comentarios de los usuarios, se hicieron ajustes de textos más descriptivos en la sección de estadisticas y en las tarjetas de cada pokémon, se espera para futuro poder incoporar información más detallada de cada Pokémon y poder brindar más estadisticas según las caracteristicas comunes de los mismos.
 
+Además con el tiempo remoto otorgado se realizan mejoras en temas de diseño tales como tipografía, y cambio de color encabezado y tamaño de logos.
 
 ## **¿Cómo acceder a la aplicación?**
 

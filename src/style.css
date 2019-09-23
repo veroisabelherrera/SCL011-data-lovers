@@ -104,9 +104,11 @@ h4{
 
 .title5{
     color: blue;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     padding-top: 20px;
+    margin: 0px;
+    padding-bottom: 10px;
 }
 
 .readmorebutton{
@@ -268,7 +270,14 @@ header{
     font-family: 'Noto Sans SC', sans-serif;
     
 } 
+.newspk{
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    color: black;
+    padding:40px 10px 40px 20px;
+    font-weight: 600; 
 
+}
 
 /*Responsive para telefonos grandes y tablets*/
 
@@ -280,7 +289,7 @@ header{
     }
 
     nav, header{
-        font-size: 13px;
+        font-size: 16px;
         padding: 5px;
     }
 
@@ -290,7 +299,7 @@ header{
     }
     
     h2{
-        font-size: 28px;
+        font-size: 30px;
     }
 
     h3{
@@ -363,6 +372,12 @@ header{
     }
     .resultCalcu{
         font-size :15px; 
+    }
+    .newspk{
+        font-size: 16px;
+        
+       
+
     }
 }
 
@@ -460,6 +475,10 @@ header{
     }
     .resultCalcu{
         font-size :13px; 
+    }
+    .newspk{
+        font-size: 13px;
+        
     }
 }
 
