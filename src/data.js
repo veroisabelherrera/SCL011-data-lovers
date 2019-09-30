@@ -53,8 +53,7 @@ return ordenarPokemon
 };
 
 
-
-
+localStorage
 
 
    //funciona para calculos
