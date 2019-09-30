@@ -1,3 +1,4 @@
+//llamada de data externa
 
 fetch('https://raw.githubusercontent.com/veroisabelherrera/SCL011-data-lovers/master/src/data/pokemon/pokemon.json')
 .then(response => {
@@ -70,6 +71,7 @@ document.getElementById("imagen-logo").addEventListener("click", () =>{
   });
 
   //const data = window.POKEMON.pokemon;
+
 
   const container = document.getElementById("showPokemones")
     const selectCandy  = document.getElementById("candy_count");
@@ -155,8 +157,10 @@ document.getElementById("imagen-logo").addEventListener("click", () =>{
           const orderPk  = document.getElementById("orden-pokedex");
           orderPk.addEventListener("change", () =>{
           let sortOrder= document.getElementById("orden-pokedex").value
-         let printOrder = window.order.sortData(data, sortOrder)
-         document.getElementById("showPokemones").innerHTML="";
+          let valueTypePokemon = document.getElementById("type_Pokemon").value
+          let printTypePk = window.filterData.thirdFilterType(data, valueTypePokemon)
+          let printOrder = window.order.sortData(printTypePk, sortOrder)
+          document.getElementById("showPokemones").innerHTML="";
 
          printOrder.forEach(element => {
           container.innerHTML += `<div>
