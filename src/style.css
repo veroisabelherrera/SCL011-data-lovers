@@ -1,6 +1,6 @@
-/*{
+*{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}*/
+}
 
 body{
     background-color: white;
@@ -11,7 +11,7 @@ body{
 }
 
 
-/*Responsive  general para computadoras*/
+/*Responsive general para computadoras*/
 
 .homescreen{
     background-image: url(../Imgs_DataLovers/fondohome.jpg);
@@ -22,12 +22,12 @@ body{
 .logopk{
     height: 90px;
     margin-top: 10px;
-
 }
 
 .logopk:hover{
     cursor: pointer;
 }
+
 nav {
     background-color: #FFCD02;
 }
@@ -41,7 +41,6 @@ nav, header{
 }
 
 nav a{ 
-    font-family: 'Source Serif Pro', serif;
     color: blue;
     text-decoration: none;
 }
@@ -67,21 +66,18 @@ nav li:hover{
 
 
 h2{
-    font-family: 'Source Serif Pro', serif;
     font-size: 32px;
     font-weight: bold;
     padding-top: 20px;
 }
 
 h3{
-    font-family:  'Muli', sans-serif;
     font-size: 28px; 
     margin: 40px;
     text-align: center;
 }
 
 h4{
-    font-family:  'Muli', sans-serif;
     font-size: 21px;
     font-weight: 400;
     margin-top: 60px;
@@ -110,7 +106,6 @@ h4{
 }
 
 .readmorebutton{
-    font-family: 'Source Serif Pro', serif;
     text-decoration: none;
     background-color: #ffffffb4;
     border: solid;
@@ -142,7 +137,6 @@ p{
 }
 
 .select-list{
-   
     color: #525252;
     font-size: 12px;
     font-weight: bold;
@@ -151,7 +145,6 @@ p{
 }
 
 .select{
-    font-family: 'Source Serif Pro', serif;
     background-color: rgba(255, 204, 2, 0.9);
     border: solid;
     border-color: #525252;
@@ -195,7 +188,6 @@ header{
 }
 
 .cartPk1{
-    font-family: 'Muli', sans-serif;
     background-color: rgba(0%, 0%, 100%, .4);
     display: flex;
     flex-direction: column;
@@ -215,7 +207,6 @@ header{
 }
 
 #pokeName, #pokedex, #pokeHeigth, #pokeWeigth{
-    font-family: 'Muli', sans-serif;
     color: blue;
     font-size: 16px;
     font-weight: bold;
@@ -235,7 +226,6 @@ header{
 }
 
 .calcubuttons, .buttoncard{
-    font-family: 'Source Serif Pro', serif;
     background-color: #DBDBDB;
     border: none;
     border-radius: 8px;
@@ -259,11 +249,10 @@ header{
 
 .resultCalcu{
     font-size: 20px;
-    font-family: 'Muli', sans-serif;
 } 
+
 .newspk{
     font-size: 18px;
-    font-family: 'Muli', sans-serif;
     color: black;
     padding:40px 10px 40px 20px;
     font-weight: 600; 
@@ -275,7 +264,6 @@ header{
     margin-left: 220px;
     margin-right: 50px;
     justify-content: center;
-    font-family: 'Muli', sans-serif;
 }
 
 
@@ -416,7 +404,6 @@ header{
     }
 
     h4{
-        font-family: 'Noto Sans SC', sans-serif;
         font-size: 18px;
         margin-bottom: 10px;
         text-align: justify;
@@ -524,10 +511,4 @@ footer {
     display: inline-flex;
     align-content: flex-end
     
-}
-.icono , .names{
-    font-family: 'Muli', sans-serif;
-
-
-      
 }
