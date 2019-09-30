@@ -37,29 +37,19 @@
   if(sortOrder == "1-151" ){
     return (pk1.id < pk2.id) ? -1 : 1
  }
-else  {
+  else if(sortOrder == "A-Z")
+    return (pk1.name < pk2.name) ? -1 : 1
+
+  else if(sortOrder == "Z-A")
+    return (pk1.name > pk2.name) ? -1 : 1
+
+  else {
   return (pk1.id > pk2.id) ? -1 : 1
-}
+  }
 })
 
 return ordenarPokemon
 },
-
-
-sortData:(data , sortOrder) =>{
-  const orderName = data.sort((a, b) => {
-    if(sortOrder == "a-z" ){
-      return (a.name < b.name) ? -1 : 1
-   }
-  else  {
-    return (a.name > b.name) ? -1 : 1
-  }
- })
-
- return orderName
- },
-
-
 };
 
 
